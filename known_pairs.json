@@ -1,0 +1,3733 @@
+{
+  "LA": {
+    "chain": "bsc",
+    "address": "0x5DBB1220BC24B462d75E66012bb70CdA8d3D1ad5",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ICP": {
+    "chain": "ethereum",
+    "address": "0x4068038AB5490063a3eAd93B3712Ed082e62bD59",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "B2": {
+    "chain": "bsc",
+    "address": "0xc1A780989734a0e5df875cEbe410748562e1c5e6",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ERA": {
+    "chain": "solana",
+    "address": "UnaQdspjeVBTdH9NvuqhnFDQ7WUQrJkDuzhdEqVcPgQ",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "XPIN": {
+    "chain": "bsc",
+    "address": "0x08dEBfC510A2EB0148107Da7AB8E96531323F4D4",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "DOT": {
+    "chain": "solana",
+    "address": "HHzuBubU6ZdthSRmckXpHprAKAfauuQKHKmL5v1aHLcz",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "PIPE": {
+    "chain": "solana",
+    "address": "GsgEAtxSKrgMC43NseBLbAQz8zNtCcn1eJmmhxzqDh1W",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "PIPPIN": {
+    "chain": "solana",
+    "address": "8WwcNqdZjCY5Pt7AkhupAFknV2txca9sq6YBkGzLbvdt",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "SCR": {
+    "chain": "scroll",
+    "address": "0x85b605af90cAd4890e674CFcAAff6a9f7825fA2d",
+    "dex": "0x1d25AF2b0992bf227b350860Ea80Bad47382CAf6",
+    "verified": false,
+    "updated": 0
+  },
+  "BSU": {
+    "chain": "bsc",
+    "address": "0xBee2C57e3a11220e2B948E26965DAAA9dFD87A4A",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MORI": {
+    "chain": "solana",
+    "address": "9nxAnMD7K78a9RMd2L3w8kQT5u9i7gsvV5aHiZ78sCC2",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "AVNT": {
+    "chain": "base",
+    "address": "0xe30d5BF485F7476AC15884a28ffb3C9cEA635DCB",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "SAPIEN": {
+    "chain": "base",
+    "address": "0x80Cc08712Aa61cE9dc7604F9cE7560A25094B862",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "TITN": {
+    "chain": "base",
+    "address": "0x611865e603862a3D1cd29146458564a684e1cBbb",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "OP": {
+    "chain": "optimism",
+    "address": "0x4DC22588Ade05C40338a9D95A6da9dCeE68Bcd60",
+    "dex": "velodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "RSR": {
+    "chain": "ethereum",
+    "address": "0xDB6925eA42897ca786a045B252D95aA7370f44b4-0xA0d69E286B938e21CBf7E51D71F6A4c8918f482F-0x320623b8E4fF03373931769A31Fc52A4E78B5d70",
+    "dex": "curve",
+    "verified": false,
+    "updated": 0
+  },
+  "ZEN": {
+    "chain": "base",
+    "address": "0x0392B12a1cEb0cd13af5Ea448CF5586EA609852D",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "HBAR": {
+    "chain": "solana",
+    "address": "12Ci2U8wn7AXdJkBnjbu6sKQSUi9yiqXuHAT3YutDEGY",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "IDOL": {
+    "chain": "bsc",
+    "address": "0xFff4857A955b2b460C27fD431aA5a85FABcA5559",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "LIGHT": {
+    "chain": "bsc",
+    "address": "0xAE02717e94C9B5bAe817601a49B4584F58324015",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SHIB": {
+    "chain": "ethereum",
+    "address": "0xCF6dAAB95c476106ECa715D48DE4b13287ffDEAa",
+    "dex": "shibaswap",
+    "verified": false,
+    "updated": 0
+  },
+  "GRIFFAIN": {
+    "chain": "solana",
+    "address": "CpsMssqi3P9VMvNqxrdWVbSBCwyUHbGgNcrw7MorBq3g",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "PYTH": {
+    "chain": "solana",
+    "address": "9n3dSLrERZQp95dHXywft7xV8D8xnGFLaUHtEhQVaXaC",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "TOWNS": {
+    "chain": "bsc",
+    "address": "0x809ef7f598673413Cb7cb0A3344EbDd1E32a05D6",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AXL": {
+    "chain": "osmosis",
+    "address": "812-ibc_903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E-uosmo",
+    "dex": "osmosis",
+    "verified": false,
+    "updated": 0
+  },
+  "TRX": {
+    "chain": "solana",
+    "address": "CaTYQHUjxHg2r7goexLXgs4L7T7vrLFyuWtokDBwk3BR",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "FOLKS": {
+    "chain": "algorand",
+    "address": "EGXXS23IL5H34OOVBIAU4OU73GF3U425SLVQ6A66DABPU2JG4MH7WGV374",
+    "dex": "tinyman",
+    "verified": false,
+    "updated": 0
+  },
+  "JTO": {
+    "chain": "solana",
+    "address": "G2FiE1yn9N9ZJx5e1E2LxxMnHvb1H3hCuHLPfKJ98smA",
+    "dex": "orca",
+    "verified": false,
+    "updated": 0
+  },
+  "ACT": {
+    "chain": "solana",
+    "address": "B4PHSkL6CeZbxVqm1aUPQuVpc5ERFcaZj7u9dhtphmVX",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "CPOOL": {
+    "chain": "ethereum",
+    "address": "0x81AEE07F99be78d88881Fa6D98FEFF7555113635",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "TON": {
+    "chain": "solana",
+    "address": "EHbby3rQDvKJYT7P5bXcCy1YkqrB7eaEyrQ7J7houYp6",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "STBL": {
+    "chain": "bsc",
+    "address": "0x90166B5795250FE7f0831E844121CC91799787e9",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AKT": {
+    "chain": "osmosis",
+    "address": "1093-ibc_1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4-uosmo",
+    "dex": "osmosis",
+    "verified": false,
+    "updated": 0
+  },
+  "TAI": {
+    "chain": "solana",
+    "address": "99a2qtfLAxv9LVhKesjEawjKy8Pwb4cypC5ccuCB4VUS",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "SOL": {
+    "chain": "polkadot",
+    "address": "0x6d6f646c6f6d6e69706f6f6c0000000000000000000000000000000000000000-1-1000752",
+    "dex": "hydration",
+    "verified": false,
+    "updated": 0
+  },
+  "AIOT": {
+    "chain": "bsc",
+    "address": "0xb433aE7E7011a2fb9A4BBB86140E0f653DCFcFBa",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "RIVER": {
+    "chain": "base",
+    "address": "0x79cB4A93e83D32A28Fe659813a180633e9FC4532",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "MOCA": {
+    "chain": "ethereum",
+    "address": "0x0b07188b12e3BbA6A680E553E23c4079e98A034b",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "VANRY": {
+    "chain": "ethereum",
+    "address": "0xF4ACDAC048C14c5E49BbEDe0C72444d806A75Cde",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BID": {
+    "chain": "base",
+    "address": "0x74F22A01Da78294f8dF640C98A414FE209e33f60",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "TAIKO": {
+    "chain": "taiko",
+    "address": "0xdf2DE6b0622fa3d5D6c0e0920661F18432bDc8eb",
+    "dex": "0x826D713e30f0bF09Dd3219494A508E6B30327d4f",
+    "verified": false,
+    "updated": 0
+  },
+  "MAGMA": {
+    "chain": "sui",
+    "address": "0xe672f3fe0c6c0bee46db41d2fd00916596a2d2384e001d4e1d4a89f98799d94a",
+    "dex": "magma",
+    "verified": false,
+    "updated": 0
+  },
+  "CLANKER": {
+    "chain": "base",
+    "address": "0xC1a6FBeDAe68E1472DbB91FE29B51F7a0Bd44F97",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SOLV": {
+    "chain": "bsc",
+    "address": "0xa367cf05A311507CB0362F4149A0C30a956803AA",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "EIGEN": {
+    "chain": "ethereum",
+    "address": "0xC2C390c6CD3C4e6c2b70727d35a45e8a072F18cA",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BTC": {
+    "chain": "solana",
+    "address": "9mG1AddFutUofmLNEfGT4vnv1E1da2PrQ5KVivYE9Bq9",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "TAKE": {
+    "chain": "bsc",
+    "address": "0x46bB9a29bFa5397B30A96a316875496EC2556dd2",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MYX": {
+    "chain": "bsc",
+    "address": "0x6eC31Af1Bb9a72aaCEc12E4dED508861b05F4503",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "COOKIE": {
+    "chain": "base",
+    "address": "0xE8833415Bd6Aee9c0c7B6aaD7DC80421C3F28ca1",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "HUMA": {
+    "chain": "bsc",
+    "address": "0x7874F0ECD450A5F06AcB85543fe1d0d48e1C525f",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "FWOG": {
+    "chain": "solana",
+    "address": "AB1eu2L1Jr3nfEft85AuD2zGksUbam1Kr8MR3uM2sjwt",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "PENDLE": {
+    "chain": "arbitrum",
+    "address": "0xBfCa4230115DE8341F3A3d5e8845fFb3337B2Be3",
+    "dex": "camelot",
+    "verified": false,
+    "updated": 0
+  },
+  "BOS": {
+    "chain": "bsc",
+    "address": "0x8EF2E070F9D73068A8f8066573c06713e5f614E2",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SPX": {
+    "chain": "ethereum",
+    "address": "0x52c77b0CB827aFbAD022E6d6CAF2C44452eDbc39",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MOODENG": {
+    "chain": "solana",
+    "address": "22WrmyTj8x2TRVQen3fxxi2r4Rn6JDHWoMTpsSmn8RUd",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "RECALL": {
+    "chain": "base",
+    "address": "0x5e3791F68EbCEAC82788f3becAb154C15141A2f4",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "VELO": {
+    "chain": "bsc",
+    "address": "0x258474Cd00b4F42842eD424e6C2C1da0087031B8",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AIXBT": {
+    "chain": "base",
+    "address": "0x7464850CC1cFb54A2223229b77B1BCA2f888D946",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "GIGA": {
+    "chain": "solana",
+    "address": "4xxM4cdb6MEsCxM52xvYqkNbzvdeWWsPDZrBcTqVGUar",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "ETH": {
+    "chain": "solana",
+    "address": "GHZEE8JrjwDJFerbueqUDmCXsToTeWJpRpw9QCmMwo2t",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "PAXG": {
+    "chain": "polkadot",
+    "address": "0x6d6f646c6f6d6e69706f6f6c0000000000000000000000000000000000000000-1-39",
+    "dex": "hydration",
+    "verified": false,
+    "updated": 0
+  },
+  "ELON": {
+    "chain": "ethereum",
+    "address": "0x7B73644935b8e68019aC6356c40661E1bc315860",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "TIA": {
+    "chain": "osmosis",
+    "address": "1248-ibc_D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877-uosmo",
+    "dex": "osmosis",
+    "verified": false,
+    "updated": 0
+  },
+  "THE": {
+    "chain": "bsc",
+    "address": "0x63Db6ba9E512186C2FAaDaCEF342FB4A40dc577c",
+    "dex": "thena",
+    "verified": false,
+    "updated": 0
+  },
+  "RAY": {
+    "chain": "solana",
+    "address": "6UmmUiYoBjSrhakAobJw8BvkmJtDVxaeBtbt7rxWo1mg",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "JUP": {
+    "chain": "solana",
+    "address": "C1MgLojNLWBKADvu9BHdtgzz1oZX4dZ5zGdGcgvvW8Wz",
+    "dex": "orca",
+    "verified": false,
+    "updated": 0
+  },
+  "SUSHI": {
+    "chain": "ethereum",
+    "address": "0x795065dCc9f64b5614C407a6EFDC400DA6221FB0",
+    "dex": "sushiswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ORCA": {
+    "chain": "solana",
+    "address": "Hxw77h9fEx598afiiZunwHaX3vYu9UskDk9EpPNZp1mG",
+    "dex": "orca",
+    "verified": false,
+    "updated": 0
+  },
+  "LQTY": {
+    "chain": "ethereum",
+    "address": "0xD1D5A4c0eA98971894772Dcd6D2f1dc71083C44E",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ZEREBRO": {
+    "chain": "solana",
+    "address": "3sjNoCnkkhWPVXYGDtem8rCciHSGc9jSFZuUAzKbvRVp",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "AVAX": {
+    "chain": "solana",
+    "address": "Cx62ywAgdNNbwAjmF1ex4Ww1nfkTv5jBrmLzhjSxdeGH",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "ELIZAOS": {
+    "chain": "bsc",
+    "address": "0x970167A715f3697AB30621094DE4596D6C1e6B0C",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "APE": {
+    "chain": "solana",
+    "address": "7khR7hdu4zb2cN9Bc23rnaVm3nDUL2HsBj4HXQYdp3er",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "TWT": {
+    "chain": "bsc",
+    "address": "0x8cCB4544b3030dACF3d4D71C658f04e8688e25b1",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "NUMI": {
+    "chain": "bsc",
+    "address": "0x39D2d7bEBD1487FFEa308fab8A6Fe2D737600e1A",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "GOAT": {
+    "chain": "solana",
+    "address": "9Tb2ohu5P16BpBarqd3N27WnkF51Ukfs8Z1GzzLDxVZW",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "MILK": {
+    "chain": "bsc",
+    "address": "0xD26d38408a6aC6fAFf6FdfA92B5910Ced2E5FD31",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "KAVA": {
+    "chain": "bsc",
+    "address": "0x99E1a43e738B026a2CD4359409594deBaB61b48D",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "0G": {
+    "chain": "bsc",
+    "address": "0x808a3F77c4be4e1ae5DaB0F63cca2CbFDe281dC5",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "EUL": {
+    "chain": "ethereum",
+    "address": "0x83974e59e6fe57a43accc2bbf32ad7063cb2c80ada40ef517a7f5319b0fa6baa",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "DOG": {
+    "chain": "solana",
+    "address": "47WiAW991PWxFwjf2P8upMPdN6FHDVN6iim1d8DSCm1Q",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "EGLD": {
+    "chain": "multiversx",
+    "address": "erd1qqqqqqqqqqqqqpgqeel2kumf0r8ffyhth7pqdujjat9nx0862jpsg2pqaq",
+    "dex": "xexchange",
+    "verified": false,
+    "updated": 0
+  },
+  "DRIFT": {
+    "chain": "solana",
+    "address": "7u3wk63dbFfN6WUdxpJ6SDNMwDixK1ti2J3Q21ws5Vxs",
+    "dex": "orca",
+    "verified": false,
+    "updated": 0
+  },
+  "BLESS": {
+    "chain": "bsc",
+    "address": "0x49986efbeEdEa3Ab962CA95caF86919860ECc9DB",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SWARMS": {
+    "chain": "solana",
+    "address": "HL4KFTfhZZMm7NGefszQxzJ3M6CaDWE7TesyuRuQYmMJ",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "SEI": {
+    "chain": "ethereum",
+    "address": "0xf8e349d1d827a6EdF17eE673664CFAd4ca78C533",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SKYAI": {
+    "chain": "bsc",
+    "address": "0xbC42145d5A574EDe9b8860FCa2A49EB7B239Efa5",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "DSYNC": {
+    "chain": "ethereum",
+    "address": "0x1ffEc7119e315B15852557f654AE0052f76e6ae1",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "JST": {
+    "chain": "tron",
+    "address": "TW68dBGdy9gtk16BfzmvaCZ9pEti3KFkk2",
+    "dex": "sunswap",
+    "verified": false,
+    "updated": 0
+  },
+  "DAM": {
+    "chain": "bsc",
+    "address": "0xC791051aF95aB0f816d3bf2e3e27021bE9472622",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "VELVET": {
+    "chain": "bsc",
+    "address": "0x5D2913a8EA284E486000177852c87EA4D64D03D6",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "COAI": {
+    "chain": "bsc",
+    "address": "0x778121B464151FE5d931587c457E48FcAaA0dc7A",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ALMANAK": {
+    "chain": "ethereum",
+    "address": "0x54252A8124eF08a4dB8Edb530c0a153c33406c53",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ZORA": {
+    "chain": "base",
+    "address": "0xEdc625B74537eE3a10874f53D170E9c17A906B9c",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "YB": {
+    "chain": "ethereum",
+    "address": "0xec977F46467a3021785Cff88894886E617abd65b",
+    "dex": "curve",
+    "verified": false,
+    "updated": 0
+  },
+  "LINEA": {
+    "chain": "ethereum",
+    "address": "0xc6360A062aD0cEB937198a6E23FE33494F9c80a8",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "TONCOIN": {
+    "chain": "ethereum",
+    "address": "0x4b62Fa30Fea125e43780DC425C2BE5acb4BA743b",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CHILLGUY": {
+    "chain": "solana",
+    "address": "93tjgwff5Ac5ThyMi8C4WejVVQq4tuMeMuYW1LEYZ7bu",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "CAKE": {
+    "chain": "bsc",
+    "address": "0x0eD7e52944161450477ee417DE9Cd3a859b14fD0",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SOPH": {
+    "chain": "bsc",
+    "address": "0x98d6E81F14B2278455311738267D6Cf93160be35",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "XVS": {
+    "chain": "bsc",
+    "address": "0x77d5b2560e4B84b3fC58875Cb0133F39560e8AE3",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "WLFI": {
+    "chain": "ethereum",
+    "address": "0x7f2869b24d83f03e0438c045ce24fd18045b2b6cdec47cd7b62e67e2284d1be9",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AUDIO": {
+    "chain": "ethereum",
+    "address": "0xC730EF0f4973DA9cC0aB8Ab291890D3e77f58F79",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AIOZ": {
+    "chain": "bsc",
+    "address": "0x80968a476E0235a026Fd1F33AAac5a3B7b76110F",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ULTIMA": {
+    "chain": "bsc",
+    "address": "0xDc85C2BB53D927006B2dB488a0CB4605fcA48032",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BRETT": {
+    "chain": "base",
+    "address": "0x4e829F8A5213c42535AB84AA40BD4aDCCE9cBa02",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "HOME": {
+    "chain": "bsc",
+    "address": "0xA2BbDeD3F749Ed41800b82e9a064196bb5174286",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MMT": {
+    "chain": "sui",
+    "address": "0xc7993ebf7a1e629a942f69e9b3a8dccc3a96db0df3991812578815a0dda08a91",
+    "dex": "momentum",
+    "verified": false,
+    "updated": 0
+  },
+  "KMNO": {
+    "chain": "solana",
+    "address": "3ndjN1nJVUKGrJBc1hhVpER6kWTZKHdyDrPyCJyX3CXK",
+    "dex": "orca",
+    "verified": false,
+    "updated": 0
+  },
+  "ARB": {
+    "chain": "arbitrum",
+    "address": "0x689C96ceAb93f5E131631D225D75DeA3fD37747E",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ALCH": {
+    "chain": "solana",
+    "address": "FyDF3vKQFbcvNTsBi7L7LremrFPmXKbQqgAgnPg1hXXd",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "TRADOOR": {
+    "chain": "bsc",
+    "address": "0x924E62a3689e7B94F397E61ac796DaBfEa32E93B",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "DF": {
+    "chain": "bsc",
+    "address": "0x763978f8FeE22b30Af08A8bA225c51465A03726e",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "XCN": {
+    "chain": "ethereum",
+    "address": "0x859f7092f56c43BB48bb46dE7119d9c799716CDF",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "RION": {
+    "chain": "bsc",
+    "address": "0x6d09609b8A9a0FB0c9515B059A1AA3121c9100Dd",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AVICI": {
+    "chain": "solana",
+    "address": "5gB4NPgFB3MHFHSeKN4sbaY6t9MB8ikCe9HyiKYid4Td",
+    "dex": "meteora",
+    "verified": false,
+    "updated": 0
+  },
+  "BANANA": {
+    "chain": "ethereum",
+    "address": "0x43DE4318b6EB91a7cF37975dBB574396A7b5B5c6",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "WET": {
+    "chain": "solana",
+    "address": "A8dNMVhgTyA4fPEJnH1ZEUjXXgd7rcn8iCPbV4Wp4qtx",
+    "dex": "meteora",
+    "verified": false,
+    "updated": 0
+  },
+  "XAUT": {
+    "chain": "ethereum",
+    "address": "0xE8a1F39C16EEA2844E98f951D711Bb4Bb31557aD",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BDXN": {
+    "chain": "bsc",
+    "address": "0x44Fb9C6A8dc3eb87a2852DDF4385B3fe4C3fdF9C",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "GUN": {
+    "chain": "avalanche",
+    "address": "0xd115523f30bF8823902E3D27c7b8B8Db5C2d936c",
+    "dex": "unknown",
+    "verified": false,
+    "updated": 0
+  },
+  "ARIA": {
+    "chain": "bsc",
+    "address": "0xA5DbEaf16Fc031eae92175974F8d0A439bE4aD17",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "RAVE": {
+    "chain": "ethereum",
+    "address": "0xca47e80bd01a1f5bcc8cf709d48a5399d533447e03d56f488498dc83c35b5831",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SYRUP": {
+    "chain": "ethereum",
+    "address": "0x29dfcb94b1ab021ca46442d2b1a3ed3d2268fdc985d2fe9a3b67a6963670ec02",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "WMTX": {
+    "chain": "bsc",
+    "address": "0x4Da61Cf492de579536Ef09709A404B842cD57EaF",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MITO": {
+    "chain": "bsc",
+    "address": "0xdaF84e35ca400d7641456e53b6a8a30CccEcFD5b",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "WIN": {
+    "chain": "tron",
+    "address": "TC1GhhC5iGFLuuUthriuUu183P8YWPmQsK",
+    "dex": "sunswap",
+    "verified": false,
+    "updated": 0
+  },
+  "PEPE": {
+    "chain": "ethereum",
+    "address": "0xA43fe16908251ee70EF74718545e4FE6C5cCEc9f",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "TRUMP": {
+    "chain": "solana",
+    "address": "9d9mb8kooFfaD3SctgZtkxQypkshx6ezhbKio89ixyy2",
+    "dex": "meteora",
+    "verified": false,
+    "updated": 0
+  },
+  "ALEO": {
+    "chain": "bsc",
+    "address": "0xa325B22090aA2d5528B01cc6974699DA4B9Cc875",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SAROS": {
+    "chain": "solana",
+    "address": "3G2itp6ERsvSs2UhfYMTEdX21uxVdKc71ipGQG8oGtom",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "FET": {
+    "chain": "ethereum",
+    "address": "0x948b54A93f5aD1df6B8bFF6Dc249D99CA2EcA052",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "GIGGLE": {
+    "chain": "bsc",
+    "address": "0x0b71D567cA211829a3BEA1d96556cf7ec9f7C593",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "LAVA": {
+    "chain": "arbitrum",
+    "address": "0xDf567CBd1ce8b1CbF7038fecD2455b523ed4e33C",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BULLA": {
+    "chain": "bsc",
+    "address": "0x48bc32f212d539b23e1459e57dC27724AEa6677a",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "LAYER": {
+    "chain": "solana",
+    "address": "G6drsaPCR3pxsEmSTAc81kW1EL3kFAFwtSAkzUZXmgH3",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "PUFFER": {
+    "chain": "bsc",
+    "address": "0xDA7630A141dBB6382DDb6409AeA7331da543B0Bb",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MNT": {
+    "chain": "ethereum",
+    "address": "0x9Aac67dEeF711D438AD711Ae495B8CB43a6eE1A8",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "USDC": {
+    "chain": "linea",
+    "address": "0x8418e91cf8Cbf7Dd37B6492e23Bec75D0F4D81D8",
+    "dex": "etherex",
+    "verified": false,
+    "updated": 0
+  },
+  "PENGU": {
+    "chain": "solana",
+    "address": "FAqh648xeeaTqL7du49sztp9nfj5PjRQrfvaMccyd9cz",
+    "dex": "orca",
+    "verified": false,
+    "updated": 0
+  },
+  "KSM": {
+    "chain": "polkadot",
+    "address": "0x6d6f646c6f6d6e69706f6f6c0000000000000000000000000000000000000000-1-1000771",
+    "dex": "hydration",
+    "verified": false,
+    "updated": 0
+  },
+  "MANYU": {
+    "chain": "ethereum",
+    "address": "0xc4704f13d5E08b27B039d53873E813dD2fAD99d9",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CHEEMS": {
+    "chain": "bsc",
+    "address": "0x38231d4ef9d33EBea944C75a21301ff6986499C3",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "VVV": {
+    "chain": "base",
+    "address": "0x01784ef301D79e4B2DF3a21ad9a536d4cF09A5Ce",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "USELESS": {
+    "chain": "solana",
+    "address": "Q2sPHPdUWFMg7M7wwrQKLrn619cAucfRsmhVJffodSp",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "PROMPT": {
+    "chain": "ethereum",
+    "address": "0xf7Fd0860922bD3352E2DBAf725A182b74bf7A2e1",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BROCCOLI": {
+    "chain": "bsc",
+    "address": "0xA5067360b13Fc7A2685Dc82dcD1bF2B4B8D7868B",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "YEE": {
+    "chain": "ethereum",
+    "address": "0xbc7Ce7b6B5437d7D715fbb1Cc7b4eC12399C5516",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ATOM": {
+    "chain": "osmosis",
+    "address": "1251-ibc_27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2-ibc_498A0751C798A0D9A389AA3691123DADA57DAA4FE165D5C75894505B876BA6E4",
+    "dex": "osmosis",
+    "verified": false,
+    "updated": 0
+  },
+  "ALGO": {
+    "chain": "algorand",
+    "address": "2PIFZW53RHCSFSYMCFUBW4XOCXOMB7XOYQSQ6KGT3KVGJTL4HM6COZRNMM",
+    "dex": "tinyman",
+    "verified": false,
+    "updated": 0
+  },
+  "COMMON": {
+    "chain": "bsc",
+    "address": "0x2D579dCFC880fC3593596085F796a165279B5F36",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "UB": {
+    "chain": "bsc",
+    "address": "0x916F992Df86795F24de6C268CFB9031fBB1155da",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "DBR": {
+    "chain": "solana",
+    "address": "E5H5BXLranyJFHEzvR3R2j6kGDQ3Fnx8sPKSsgYqyya8",
+    "dex": "meteora",
+    "verified": false,
+    "updated": 0
+  },
+  "CUDIS": {
+    "chain": "bsc",
+    "address": "0xA10C53b6846658E8F2a4693d0541bD9b6bb2C612",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SNX": {
+    "chain": "ethereum",
+    "address": "0xA3ccaf08a54Cf31649f91aE1570A0720C8d4EB1E",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "LINK": {
+    "chain": "solana",
+    "address": "418ptryrhBdWNjvUV94WbaiJ6dMb4jbDhVrq1oVNtLt5",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "ZRC": {
+    "chain": "bsc",
+    "address": "0xE9388678F0542D5406145C3dB85B5b754DAff085",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ENA": {
+    "chain": "solana",
+    "address": "7QhPRbRUNrchat6X4jDUzkgfXQVXdURE3wSf1WGMBz5D",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "TAG": {
+    "chain": "bsc",
+    "address": "0xf0750c373EbBB3BaEEF7e03D8300cAaD1983d67c",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "HANA": {
+    "chain": "bsc",
+    "address": "0xd21bc2291C1aeF340f5265E257B18aa5dafed759",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "YALA": {
+    "chain": "bsc",
+    "address": "0x8481d46579164E3a5797c5C484D9F8d87c25342F",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "2Z": {
+    "chain": "solana",
+    "address": "G4LTmHVnARsAmjDYAVukjPoMwae5AVhwWdWpHCjhJcqc",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "ATH": {
+    "chain": "ethereum",
+    "address": "0xd31d41DfFa3589bB0c0183e46a1eed983a5E5978",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "VFY": {
+    "chain": "base",
+    "address": "0x700d91F1C3C5e430eA776245e741B84402e8de2E",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "FIL": {
+    "chain": "solana",
+    "address": "73T3xByKnhP5JViuaJ9A52sqKHnv8CKg3X8mAcfbmEp2",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "SONIC": {
+    "chain": "solana",
+    "address": "BpzGNsHoSdPkoANBNkrw6syqqLLPX6j38FZg6rJ1QLJ",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "ZKC": {
+    "chain": "bsc",
+    "address": "0x61A6f9E817174Be19b734934573ae5219E724425",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BLUE": {
+    "chain": "sui",
+    "address": "0x4b8271fc4819078e44ee9a0506a824b77464789d57ace355d0562a4776c51840",
+    "dex": "bluefin",
+    "verified": false,
+    "updated": 0
+  },
+  "KOMA": {
+    "chain": "bsc",
+    "address": "0x0eC12dB33551AFBa853b691B4EDf49196eA0e99A",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "KITE": {
+    "chain": "ethereum",
+    "address": "0x3cff303d771452876849de7f0e6a21060886a74ae29fb27d5f3388197c249b19",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "LAB": {
+    "chain": "bsc",
+    "address": "0x2f62969A74159bfC9365d8Cd29aE8F6D15582204",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AERO": {
+    "chain": "base",
+    "address": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "XNY": {
+    "chain": "bsc",
+    "address": "0x7cCC3010e52fbca54467ff68eEc4be78420571C5",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AT": {
+    "chain": "bsc",
+    "address": "0x0022f0dcd574A1e646250eEbD086781823434504",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "LITKEY": {
+    "chain": "bsc",
+    "address": "0x4Bae9cB33c90c4477776890782CB62568cBEb16a",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "GRT": {
+    "chain": "arbitrum",
+    "address": "0x74d0Ae8B8e1fCA6039707564704a25aD2ee036B0",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "NS": {
+    "chain": "sui",
+    "address": "0x1595b46012324ae6050cd146fbe0c95420eb96f557eda462c93526c01e179735",
+    "dex": "momentum",
+    "verified": false,
+    "updated": 0
+  },
+  "NOBODY": {
+    "chain": "solana",
+    "address": "7rQd8FhC1rimV3v9edCRZ6RNFsJN1puXM9UmjaURJRNj",
+    "dex": "meteora",
+    "verified": false,
+    "updated": 0
+  },
+  "JELLYJELLY": {
+    "chain": "solana",
+    "address": "3bC2e2RxcfvF9oP22LvbaNsVwoS2T98q6ErCRoayQYdq",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "ASP": {
+    "chain": "bsc",
+    "address": "0xf9452Bb9B8B119DC08094B8B3B191bC88e94b319",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "XPL": {
+    "chain": "bsc",
+    "address": "0x50203DF8eFcddBa9755C886F086b9B2D537a15F9",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "HOLO": {
+    "chain": "bsc",
+    "address": "0xF7f9fC41DA4B8E0d52a642Af2ad38509C3e40BF0",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ILV": {
+    "chain": "ethereum",
+    "address": "0x6a091a3406E0073C3CD6340122143009aDac0EDa",
+    "dex": "sushiswap",
+    "verified": false,
+    "updated": 0
+  },
+  "WCT": {
+    "chain": "base",
+    "address": "0xEBd2eeaB20CeFa41C94343F506ac506bfc3F681e",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "AKE": {
+    "chain": "bsc",
+    "address": "0x4D3bF29Ba30f8Bfe4624e7678709afA195689c5D",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "HIPPO": {
+    "chain": "sui",
+    "address": "0xb785e6eed355c1f8367c06d2b0cb9303ab167f8359a129bb003891ee54c6fce0",
+    "dex": "cetus",
+    "verified": false,
+    "updated": 0
+  },
+  "SIREN": {
+    "chain": "bsc",
+    "address": "0xb2AF49dBF526054FAf19602860A5E298a79F3D05",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "VIRTUAL": {
+    "chain": "base",
+    "address": "0x21594b992F68495dD28d605834b58889d0a727c7",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "TRAC": {
+    "chain": "ethereum",
+    "address": "0xb1914469141Ebb6e244e75cEe3f35d43BF6B85e5",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BLOCK": {
+    "chain": "ethereum",
+    "address": "0xdaBc816B691C8C2135f087a32Eeb09a3f548938E",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "VINE": {
+    "chain": "solana",
+    "address": "58fzJMbX5PatnfJPqWWsqkVFPRKptkbb5r2vCw4Qq3z9",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "SIGN": {
+    "chain": "bsc",
+    "address": "0x908aB8983DffBbDd74EC6028110610E18239EC1E",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ZEC": {
+    "chain": "solana",
+    "address": "56TuRAE5VEigE6XqkwBW7YWP5NzzxCvQBWN93rceEeDx",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "CARV": {
+    "chain": "bsc",
+    "address": "0x6045479ab46dF901E7c86977ED22DDeB80728165",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ON": {
+    "chain": "bsc",
+    "address": "0x4620F5C127A6055FbebB1f71327D60fF079C9060",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "FF": {
+    "chain": "bsc",
+    "address": "0x9F8f4615Ff5143aeE365fa34f34196fB85Be7650",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "TAO": {
+    "chain": "solana",
+    "address": "J6XhnAVQ517fRCXtb9eaRSxAiDyyiio9zo7aVNmMywPq",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "KAITO": {
+    "chain": "base",
+    "address": "0x83590fd898a51336b3a9eb4f25022b0dc9f083ded83fb40384660e5066dcbce5",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CLOUD": {
+    "chain": "solana",
+    "address": "F1KKNyUCsQcZLRjwQ4abX6Ri8gDAQ46nHwSHFKA5sFQv",
+    "dex": "meteora",
+    "verified": false,
+    "updated": 0
+  },
+  "DEGEN": {
+    "chain": "base",
+    "address": "0xc9034c3E7F58003E6ae0C8438e7c8f4598d5ACAA",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "FLR": {
+    "chain": "solana",
+    "address": "8L99dBPFswkXd9DoReff6CS9r2AfuguTpmfjXL2PEVTv",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "POL": {
+    "chain": "katana",
+    "address": "0x401489B205fA340F7e120aAfd00694Ec506D0E7F",
+    "dex": "sushiswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CYPR": {
+    "chain": "base",
+    "address": "0xE6C694f8B9EE84353a10de59c9b4cDEFa0F5b4Ad",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "ETC": {
+    "chain": "solana",
+    "address": "J9uJCvdYaogCe2114wPAZNFvMTTY8QB77iH6CDGL1t3Z",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "GMX": {
+    "chain": "arbitrum",
+    "address": "0x1aEEdD3727A6431b8F070C0aFaA81Cc74f273882",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AGT": {
+    "chain": "bsc",
+    "address": "0xD3cFFC6B02a34DfC72F1350339031043a854599f",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ORE": {
+    "chain": "solana",
+    "address": "27ExzqiGapKFd6NhffapRfdSkuykTVUqY5qeuNnrzBNm",
+    "dex": "orca",
+    "verified": false,
+    "updated": 0
+  },
+  "CETUS": {
+    "chain": "sui",
+    "address": "0x2e041f3fd93646dcc877f783c1f2b7fa62d30271bdef1f21ef002cebf857bded",
+    "dex": "cetus",
+    "verified": false,
+    "updated": 0
+  },
+  "BCH": {
+    "chain": "solana",
+    "address": "HPHLnz7UJ8V9CnsBEVAB4hvVef9prURD52gCQLoCYY1P",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "APT": {
+    "chain": "aptos",
+    "address": "pcs-1",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "FHE": {
+    "chain": "bsc",
+    "address": "0xe4Af4797AFbf733591B6e0C4EA3566Ad3979CA94",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "1INCH": {
+    "chain": "ethereum",
+    "address": "0x28028CB848361930d2dc1F502439050A6EE5E4c2",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ZIG": {
+    "chain": "solana",
+    "address": "D8AJxBjVT6WsNnZBRM372f9YwRXWiSQVKTsrBQ4a6st",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "STX": {
+    "chain": "stacks",
+    "address": "SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.xyk-pool-stx-aeusdc-v-1-2",
+    "dex": "bitflow",
+    "verified": false,
+    "updated": 0
+  },
+  "COOK": {
+    "chain": "mantle",
+    "address": "0x5E91619CF346BF692287AF1E18219CcfFb641c6B",
+    "dex": "agni",
+    "verified": false,
+    "updated": 0
+  },
+  "TRUTH": {
+    "chain": "sui",
+    "address": "0x8ecce8442ce5c3fb95960011ad47e0813fdae755db7e5f3ba37f5143578e5a5a",
+    "dex": "bluefin",
+    "verified": false,
+    "updated": 0
+  },
+  "SAHARA": {
+    "chain": "bsc",
+    "address": "0x7C1F9f04c87aCA8364D38FFEe99cd03A96D1FEBe",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "NXPC": {
+    "chain": "avalanche",
+    "address": "0x933bEFD6941F135e137Bb370bC6C4d39D3E88F03",
+    "dex": "traderjoe",
+    "verified": false,
+    "updated": 0
+  },
+  "TRUST": {
+    "chain": "base",
+    "address": "0x17f707CF3EDBbd5d9251D4bCDF9Ad70a247D7B84",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "ZBCN": {
+    "chain": "solana",
+    "address": "FaoZEZFsRS2jJAzg5PXwNjDdA1hDAjDGAkDf4xRfY79w",
+    "dex": "orca",
+    "verified": false,
+    "updated": 0
+  },
+  "BLUAI": {
+    "chain": "bsc",
+    "address": "0xBA20Fe9506a904A30EBB8B7C348f4969F5A5Ea07",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "RACA": {
+    "chain": "bsc",
+    "address": "0xD5bf6001F7d374AE257eb364513F02644B2ed9B3",
+    "dex": "tiktokfun",
+    "verified": false,
+    "updated": 0
+  },
+  "WAL": {
+    "chain": "sui",
+    "address": "0x919a34b9df1d7a56fa078ae6ddc6bd203e284974704d85721062d38ee3a6701a",
+    "dex": "momentum",
+    "verified": false,
+    "updated": 0
+  },
+  "HYPE": {
+    "chain": "solana",
+    "address": "81GpCm4d13y8TozYtThabuSCLQN2o3bbrvDogXFPn8sA",
+    "dex": "meteora",
+    "verified": false,
+    "updated": 0
+  },
+  "MBOX": {
+    "chain": "bsc",
+    "address": "0x8FA59693458289914dB0097F5F366d771B7a7C3F",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "THQ": {
+    "chain": "base",
+    "address": "0x0fbcaaf346e1b812a63b2cf196841ed7664ae1d4fa3e9fd93b29266801c15f44",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MET": {
+    "chain": "solana",
+    "address": "BnztueWcXv93mgW7yJe8WYpnCxpz34nujPhfjQT6SLu1",
+    "dex": "meteora",
+    "verified": false,
+    "updated": 0
+  },
+  "EVAA": {
+    "chain": "bsc",
+    "address": "0x26deB24a2623Cf54452Ab5183E2C34551831D54d",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SUI": {
+    "chain": "polkadot",
+    "address": "0x6d6f646c6f6d6e69706f6f6c0000000000000000000000000000000000000000-1-1000753",
+    "dex": "hydration",
+    "verified": false,
+    "updated": 0
+  },
+  "BTR": {
+    "chain": "bsc",
+    "address": "0x787ABD73593Bed588852163402d191C302c7f8b6",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "HNT": {
+    "chain": "solana",
+    "address": "91axdGmMoqQQg2MPUXKxT3bdqX4p2RMLXqZSQgXn2JpM",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "PONKE": {
+    "chain": "solana",
+    "address": "5uTwG3y3F5cx4YkodgTjWEHDrX5HDKZ5bZZ72x8eQ6zE",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "METIS": {
+    "chain": "ethereum",
+    "address": "0x1c98562A2FaB5aF19D8Fb3291a36AC3C618835D9",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "REZ": {
+    "chain": "ethereum",
+    "address": "0xe7e64a776c0c57da08b21758e556a6704857c0a6f566f60f583ffe261b13baef",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ETHFI": {
+    "chain": "ethereum",
+    "address": "0x526cc4c56982e84ce640c387c0a5454fc2030d30f7fc77a8bb64d71718edbdaa",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CGN": {
+    "chain": "base",
+    "address": "0xD164Ea3a559d046E694C9Ac09F80887E5906129c",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "XMR": {
+    "chain": "solana",
+    "address": "BJmKHqqC7o2QJjoJMsiPnB5HHjtZf5rJsNiwmmucwR85",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "FXS": {
+    "chain": "ethereum",
+    "address": "0x03B59Bd1c8B9F6C265bA0c3421923B93f15036Fa",
+    "dex": "fraxswap",
+    "verified": false,
+    "updated": 0
+  },
+  "B3": {
+    "chain": "base",
+    "address": "0xB099C658e784b41EE435d48a8eb67e8f27285C93",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "ESPORTS": {
+    "chain": "bsc",
+    "address": "0x5Bb59Bb9371cBeC158eD602d5f3CF1AD1c9B4462",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SUBHUB": {
+    "chain": "bsc",
+    "address": "0x4D6063A85E3dE0C21eaeBD21bf7f1BDC186317Ab",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AIN": {
+    "chain": "bsc",
+    "address": "0xf4262C4dbF524f53851A5176bdC7D6C1e0fA82D8",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "APEX": {
+    "chain": "ethereum",
+    "address": "0xC74F05C1e7b86fa42Ab07Ab4a1361286B9a90087",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "XVG": {
+    "chain": "solana",
+    "address": "3uXWoC2PnBkJdcnETMvhjVmBSzHjRXkV6TvAhS7CVLBw",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "ADA": {
+    "chain": "solana",
+    "address": "9LqGvywqpta8Ch4qMiij2cj2qr8UabppmeqqETLncnkQ",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "PROVE": {
+    "chain": "bsc",
+    "address": "0x3353274E21Dec3964E56CC227582E320533c5869",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "HEMI": {
+    "chain": "bsc",
+    "address": "0x1b54cd932B6B751803C996cBeF36280b53795f81",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "APR": {
+    "chain": "monad",
+    "address": "0x04Ddf65A9E78A0F0E001807E5567996160767f33",
+    "dex": "nad-fun",
+    "verified": false,
+    "updated": 0
+  },
+  "BANANAS31": {
+    "chain": "bsc",
+    "address": "0x7F51BBf34156ba802dEB0E38B7671DC4fa32041d",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "RENDER": {
+    "chain": "solana",
+    "address": "FZ8MJvdTPbp8juhtFCCzb7LsKunhexgzShGQ59SUJkNL",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "MORPHO": {
+    "chain": "ethereum",
+    "address": "0xd9f5cbaeb88b7f0d9b0549257ddd4c46f984e2fc4bccf056cc254b9fe3417fff",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "PTB": {
+    "chain": "bsc",
+    "address": "0x28B7C347a58c9C30b21e51e732EE9723d910f605",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "XDC": {
+    "chain": "solana",
+    "address": "FMLbvbd6qAaUr5vFqD7HaDowEy4R3X9LM1yS2WWktVy6",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "AVL": {
+    "chain": "bsc",
+    "address": "0x7192966c6d3AB630eE60dBD4c1B39E9e8267F8cF",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BAS": {
+    "chain": "bsc",
+    "address": "0xA341E8E8EE6BF97fA1d18c2d12F00555DC78207E",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "GHST": {
+    "chain": "base",
+    "address": "0x56C11053159a24c0731b4b12356BC1f0578FB474",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "ICNT": {
+    "chain": "base",
+    "address": "0x9331F571F79d1E186a095C93756b5680a43932AC",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "HAEDAL": {
+    "chain": "sui",
+    "address": "0x711f5d37e3b09b026b182d9e0973d05e9a837d11066ff48f4a55a426d8913359",
+    "dex": "cetus",
+    "verified": false,
+    "updated": 0
+  },
+  "POP": {
+    "chain": "bsc",
+    "address": "0xE5ce5bc4785CD2a246151364f5A190ceE3FDb142",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CGPT": {
+    "chain": "bsc",
+    "address": "0x1E8D7AB96323953faC85ab687f5D38b45344e62d",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "TOSHI": {
+    "chain": "bsc",
+    "address": "0x27820F8b2e7c5dbe1eef6805577c222aFdE1a191",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "NEAR": {
+    "chain": "bsc",
+    "address": "0x0246913eC96765bca457B0a3608872bBa37D1d15",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "US": {
+    "chain": "sui",
+    "address": "0x968f1f73b8e766e2ce0198c807d0c956aa384bfe64c98a18e56bfb970a13e7bb",
+    "dex": "cetus",
+    "verified": false,
+    "updated": 0
+  },
+  "SKY": {
+    "chain": "polkadot",
+    "address": "0x6d6f646c6f6d6e69706f6f6c0000000000000000000000000000000000000000-1-1000795",
+    "dex": "hydration",
+    "verified": false,
+    "updated": 0
+  },
+  "MEW": {
+    "chain": "solana",
+    "address": "879F697iuDJGMevRkRcnW21fcXiAeLJK1ffsw2ATebce",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "PLAY": {
+    "chain": "bsc",
+    "address": "0x3bE400E891786c958c22E121Abe71599C576EffC",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CVX": {
+    "chain": "ethereum",
+    "address": "0xB576491F1E6e5E62f1d8F26062Ee822B40B0E0d4",
+    "dex": "curve",
+    "verified": false,
+    "updated": 0
+  },
+  "ALLO": {
+    "chain": "bsc",
+    "address": "0x84354592cb82EAc7fac65df4478ED1eEbBa0252c",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "PEAQ": {
+    "chain": "bsc",
+    "address": "0x83A9Fd66c9515536d630Cf818c41190b0372c6f6",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "IN": {
+    "chain": "bsc",
+    "address": "0x5bd808Ab85C124f99080da5F864EDcB39950edE5",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SUPER": {
+    "chain": "ethereum",
+    "address": "0x25647E01Bd0967C1B9599FA3521939871D1d0888",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "FRANKLIN": {
+    "chain": "solana",
+    "address": "8wXzwpLjk6QJMYYC1VHueNnxRVW2nFGvQjgEnV4Mv8sY",
+    "dex": "pumpswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SENTIS": {
+    "chain": "bsc",
+    "address": "0x94BC8C5B800bb6D684f0dDd7de2199d08cBE0642",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BANK": {
+    "chain": "bsc",
+    "address": "0xee6fF918A1f68B5d2FDEcb14b367FA2EB5C6951c",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SOMI": {
+    "chain": "bsc",
+    "address": "0xBb7dCdf040346422341c7b844A18663932336606",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ME": {
+    "chain": "solana",
+    "address": "3nNg189ewAxiNeRt3hHuMzTrL6hpwUZ7zXUWTcQhTojq",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "GRASS": {
+    "chain": "solana",
+    "address": "GTJ2S27UL7yZ3TdTwpKjfNcxeEZRkRPHjpj5Fubwb8Mk",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "QNT": {
+    "chain": "ethereum",
+    "address": "0x24EE2c6B9597F035088CDa8575E9D5e15a84B9DF",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "FORM": {
+    "chain": "bsc",
+    "address": "0x7Cb113B487e025b3a69537fcA579559433240cb5",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "LSK": {
+    "chain": "ethereum",
+    "address": "0x6af632b8235f1a9d95a816f7a4090736346b763a8ab4e8327017aaae72d0d1d2",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SQD": {
+    "chain": "bsc",
+    "address": "0x43256d0dCC2571E564311edb6D7e8F076a72Fc46",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BIO": {
+    "chain": "ethereum",
+    "address": "0xc8c4ec62ee9aed213a68d3c49b2b64b630a26873c5b003f40db4d357834bfd96",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "TANSSI": {
+    "chain": "ethereum",
+    "address": "0xc492d0126cf891a0e6c445b96e2cde2268934a32e1055b317b6046f0621a9789",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "PLANCK": {
+    "chain": "bsc",
+    "address": "0xC36a3838C44D397aB3e9d88E5997A0EB942a2714",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "XLM": {
+    "chain": "solana",
+    "address": "3TjAqr2u91e3ZpZgHHTKYnWnzHs1LvS48uerVr5mRCaP",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "CAT": {
+    "chain": "bsc",
+    "address": "0x6DF9aDc1837Bf37E0B1b943d59A7E50D9678c81B",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "TOKEN": {
+    "chain": "bsc",
+    "address": "0x05616b7B6Da03Fb4c773B76663816b360ccAEdE4",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "FLUID": {
+    "chain": "ethereum",
+    "address": "0xc1cd3D0913f4633b43FcdDBCd7342bC9b71C676f",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "STABLE": {
+    "chain": "bsc",
+    "address": "0xeAA6C7292eD954CA9Dd72E769568D057B0525c9A",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "DOOD": {
+    "chain": "solana",
+    "address": "5KXE8RMF7iW9Ptn665AHfzsMFjYb4LV2Ta8eZEtsTwWC",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "CROSS": {
+    "chain": "bsc",
+    "address": "0xE6e51Ea572502DBdF8b40834D0619f9a9144d3A5",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SUN": {
+    "chain": "tron",
+    "address": "THu6ConqvZ3phYHeNTDyW9aE3pGypwBsP6",
+    "dex": "sunswap",
+    "verified": false,
+    "updated": 0
+  },
+  "KGEN": {
+    "chain": "aptos",
+    "address": "0x7f04db632793b77d784ce9518248f8956dcd6f5bba74a73d17843a73e0ec9010-0xa-0x2a8227993a4e38537a57caefe5e7e9a51327bf6cd732c1f56648f26f68304ebc",
+    "dex": "thala",
+    "verified": false,
+    "updated": 0
+  },
+  "SAFE": {
+    "chain": "ethereum",
+    "address": "0x000ba527862e5b82cff0F7c66b646AF023274aA1",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "LDO": {
+    "chain": "polkadot",
+    "address": "0x6d6f646c6f6d6e69706f6f6c0000000000000000000000000000000000000000-1-1000796",
+    "dex": "hydration",
+    "verified": false,
+    "updated": 0
+  },
+  "MIRA": {
+    "chain": "bsc",
+    "address": "0xe34C78cE8F585014F922b64b7a4E2c665a629AF6",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ONDO": {
+    "chain": "ethereum",
+    "address": "0x7b1E5D984A43eE732de195628d20d05CFaBc3cC7",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ROAM": {
+    "chain": "bsc",
+    "address": "0x30D59a44930B3994c116846EFe55fC8fcF608aa8",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "TAC": {
+    "chain": "bsc",
+    "address": "0xD2Cd331E493a325DD5634cFEb93852389C0aAECe",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "OKB": {
+    "chain": "solana",
+    "address": "21LxgFktiCBt7XSeZwLkThmYgdZGktThTmwKKMvs9yQb",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "UNI": {
+    "chain": "solana",
+    "address": "6botnAzs5mjPiEWGDbE42jHzqSaZeVKnbD98cmAaGByA",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "NIGHT": {
+    "chain": "cardano",
+    "address": "f5808c2c990d86da54bfc97d89cee6efa20cd8461616359478d96b4ce74c52975908a612d5ce68327040d449aae99f8b463bb6de046a1b23c5713169",
+    "dex": "minswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BNB": {
+    "chain": "solana",
+    "address": "AgC7En9s897T4us149giMh8GRtfTGsKK3YiexoCQ66xs",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "BOME": {
+    "chain": "solana",
+    "address": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "DOGE": {
+    "chain": "bsc",
+    "address": "0xac109C8025F272414fd9e2faA805a583708A017f",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "DUSK": {
+    "chain": "ethereum",
+    "address": "0xf88fe24b177a8b540952327757b017d17efc2dfc40b4f75ed846198fab0c5edb",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MAMO": {
+    "chain": "base",
+    "address": "0xE2B3aA806e56603a244bFc111c9474F7DeDD03db",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "XRP": {
+    "chain": "solana",
+    "address": "CL3h3waLaTYTKXhA4hcakbkFrUt2GcFbaLMe9iThdoG3",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "DEEP": {
+    "chain": "sui",
+    "address": "0xe01243f37f712ef87e556afb9b1d03d0fae13f96d324ec912daffc339dfdcbd2",
+    "dex": "cetus",
+    "verified": false,
+    "updated": 0
+  },
+  "ZRO": {
+    "chain": "ethereum",
+    "address": "0x360acF12e72044ba3eaAA654E51E4725c699DcB1",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "FLOKI": {
+    "chain": "bsc",
+    "address": "0x231d9e7181E8479A8B40930961e93E7ed798542C",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ZENT": {
+    "chain": "bsc",
+    "address": "0x219cf5fc877F3DC7E5105496249797eD34CDfb4b",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "PING": {
+    "chain": "base",
+    "address": "0x98c8f03094a9e65ccedc14c40130e4a5dd0ce14fb12ea58cbeac11f662b458b9",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "WLD": {
+    "chain": "ethereum",
+    "address": "0x841820459769cd629B10a36FD12E603938cc2679",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "DOLO": {
+    "chain": "berachain",
+    "address": "0xD5980e98A89e2D2361b3BE657e8a003c6d3514e3",
+    "dex": "kodiak",
+    "verified": false,
+    "updated": 0
+  },
+  "IKA": {
+    "chain": "sui",
+    "address": "0x5fa94e0cb243f0e50f126416e940ff61a95c0ba0b903608df6640d74609e84c9",
+    "dex": "steamm",
+    "verified": false,
+    "updated": 0
+  },
+  "BEST": {
+    "chain": "ethereum",
+    "address": "0x2Cdca2da7443BfB4f789f41C83600c1dc8D09Ed3",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "XAN": {
+    "chain": "bsc",
+    "address": "0x049F1009BC8C5d0048732Fe2F95C27C240214634",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "POPCAT": {
+    "chain": "solana",
+    "address": "FRhB8L7Y9Qq41qZXYLtC2nw8An1RJfLLxRF2x9RwLLMo",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "STRK": {
+    "chain": "starknet",
+    "address": "0x033068f6539f8e6e6b131e6b2b814e6c34a5224bc66947c47dab9dfee93b35fb-0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d-170141183460469235273462165868118016-1000-0x0",
+    "dex": "ekubo",
+    "verified": false,
+    "updated": 0
+  },
+  "TEL": {
+    "chain": "polygon",
+    "address": "0x3bd8a254163f8328efCC4F8c36da566753462433",
+    "dex": "balancer",
+    "verified": false,
+    "updated": 0
+  },
+  "BAN": {
+    "chain": "solana",
+    "address": "DmAsjXoceoL5vTKZbYpTpXPo7MKm16FMfNMm3PJFiUha",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "INJ": {
+    "chain": "osmosis",
+    "address": "1319-ibc_64BA6E31FE887D66C6F8F31C7B1A80C7CA179239677B4088BB55F5EA07DBE273-ibc_498A0751C798A0D9A389AA3691123DADA57DAA4FE165D5C75894505B876BA6E4",
+    "dex": "osmosis",
+    "verified": false,
+    "updated": 0
+  },
+  "ASTER": {
+    "chain": "bsc",
+    "address": "0xaeaD6bd31dd66Eb3A6216aAF271D0E661585b0b1",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "LTC": {
+    "chain": "solana",
+    "address": "71frjrkt2A6QB6f7caru34WWmZvJ8tiquWFoGAgCTWZu",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "EDEN": {
+    "chain": "ethereum",
+    "address": "0xcb60ed47bb1b496650f5506ec744f64e23185f49f86e1e5326754c366940be6b",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "NAORIS": {
+    "chain": "bsc",
+    "address": "0x435A26A47c60324bA74476922274d8E41813BE6f",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CRV": {
+    "chain": "solana",
+    "address": "GqFPHShXXaxRw3rzuMd212y5g2AdVTK3wsxVe5gRofwj",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "MERL": {
+    "chain": "merlinchain",
+    "address": "0x2426191006F378BF33445f87938d355096eE2e8C",
+    "dex": "merlinswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ANIME": {
+    "chain": "arbitrum",
+    "address": "0xBBf3209130dF7d19356d72Eb8a193e2D9Ec5c234",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "TA": {
+    "chain": "bsc",
+    "address": "0xFA7421F1ed6AD1548316a847e8437af7219A8F18",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "OL": {
+    "chain": "bsc",
+    "address": "0xE65eA0eC747f2a3Cc7999b92F81231db48F6ab1F",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SXT": {
+    "chain": "ethereum",
+    "address": "0x20c42D3513e9E7fafFf82173AA5327f02D5163e3",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "PARTI": {
+    "chain": "bsc",
+    "address": "0xC0FB39f705Ee65Ef098dD5452997A7846d156aa9",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ASTR": {
+    "chain": "polkadot",
+    "address": "0x6d6f646c6f6d6e69706f6f6c0000000000000000000000000000000000000000-1-9",
+    "dex": "hydration",
+    "verified": false,
+    "updated": 0
+  },
+  "RLS": {
+    "chain": "bsc",
+    "address": "0x5b6d8d82dc94A85dF7a058E90a2FBc438EFBB9FE",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AAVE": {
+    "chain": "solana",
+    "address": "wMRY342DipoEHUTfaQxhvKDhkEQyCPiYTT5W7kbYA5i",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "AIO": {
+    "chain": "bsc",
+    "address": "0x97620e003c03381EaCBDE7135F28d94303bb5672",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "FLOCK": {
+    "chain": "base",
+    "address": "0xd7338B6F338DA54b922bbBC6fBE3EFEDD5Ce35fa",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "EPIC": {
+    "chain": "ethereum",
+    "address": "0xec0a57d0ad701e7c54a084f4a69ab633955b6eec9dbef9a7092d78096ff1521b",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ACX": {
+    "chain": "ethereum",
+    "address": "0x2073f11d7fbeb83fbefb37daac5221c5ba02e724be70a25bf17a98d07747b783",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "GMT": {
+    "chain": "polygon",
+    "address": "0xB064e9B00d713496D54617C3ef6e659072B8339f",
+    "dex": "dooar",
+    "verified": false,
+    "updated": 0
+  },
+  "TURBO": {
+    "chain": "ethereum",
+    "address": "0xeB97B7D2A97EAf3aFD77717922B5cEB7cbA339a4",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CHESS": {
+    "chain": "bsc",
+    "address": "0x1472976E0B97F5B2fC93f1FFF14e2b5C4447b64F",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "LISTA": {
+    "chain": "bsc",
+    "address": "0x2C533e2C2B4fd1172b5A0a0178805Be1526a15a7",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "RESOLV": {
+    "chain": "bsc",
+    "address": "0x97e5C863245ccA61304faA2ECA855025691D4Dcd",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ZEUS": {
+    "chain": "solana",
+    "address": "Dsxt7wUigQU5puH9nHjmfwnUenMycAgsFtrkfggLh8P1",
+    "dex": "orca",
+    "verified": false,
+    "updated": 0
+  },
+  "FORT": {
+    "chain": "ethereum",
+    "address": "0x1a3Fb049C2D88A16B927Be6a4CAE48ca38D93d4C",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ORDER": {
+    "chain": "bsc",
+    "address": "0xA7DF052672a24885d784A72b5f72d50296161531",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "COW": {
+    "chain": "ethereum",
+    "address": "0xc54493a23ae7d31ebee8a668f1ebf9fd7046ac98670612cc7d9bafd47c7ed963",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ALU": {
+    "chain": "bsc",
+    "address": "0x3C7e7122f4DDcfC5b5c31b5c735Ce2Ae3b015856",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MASK": {
+    "chain": "ethereum",
+    "address": "0xA40bb1c47F6DD27142a2Bd7C93BFa98db9D1f5c5",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "YGG": {
+    "chain": "abstract",
+    "address": "0x157BeAA1C7dcC2AAD79846eC693C558609eBc0ea",
+    "dex": "abstractswap",
+    "verified": false,
+    "updated": 0
+  },
+  "OGN": {
+    "chain": "ethereum",
+    "address": "0x6890cea9BD587C60d23cF08C714c8CBad2269fF3",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "LMWR": {
+    "chain": "ethereum",
+    "address": "0x03296FdD8bf8e0f9def07fAC3466b256Fc8720B0",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "GNO": {
+    "chain": "ethereum",
+    "address": "0xf7878463070a013A58F547b2b08df47a1FB91744",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CRO": {
+    "chain": "ethereum",
+    "address": "0x3a4f24ef62fa97f3bbf9d606c8bc67b7118fc75b7d83550cbf1dc6edf84766c6",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MUBARAK": {
+    "chain": "bsc",
+    "address": "0x90A54475D512B8f3852351611c38faD30a513491",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "IQ": {
+    "chain": "ethereum",
+    "address": "0x07AF6BB51d6Ad0Cf126E3eD2DeE6EaC34BF094F8",
+    "dex": "fraxswap",
+    "verified": false,
+    "updated": 0
+  },
+  "IR": {
+    "chain": "berachain",
+    "address": "0xfC3CC4aAD0fb8C9EbEe7B2F7619A56838ec8221c",
+    "dex": "kodiak",
+    "verified": false,
+    "updated": 0
+  },
+  "TST": {
+    "chain": "bsc",
+    "address": "0xB36C81707E5CA2BD6F68cD6b71B3178d29c48a4b",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "NEWT": {
+    "chain": "ethereum",
+    "address": "0x505ee5e52545cc585120cbe26f3238057aee93a5e56971f744be5126a3126241",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BR": {
+    "chain": "bsc",
+    "address": "0xa6Ed9F4A42D0f47B088178bbdF3582a9A654dB99",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "EDU": {
+    "chain": "ethereum",
+    "address": "0x1EedEc1e540c9d43eAC18d20b138b3B243d9dbE2",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ALT": {
+    "chain": "ethereum",
+    "address": "0x65680A987f4871a7bB865C86FaE11667e6aA8068",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BAT": {
+    "chain": "ethereum",
+    "address": "0xB6909B960DbbE7392D405429eB2b3649752b4838",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BIGTIME": {
+    "chain": "ethereum",
+    "address": "0x484dcf85Bc5F005E5628a85c7DDe5c846B9B64A7",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MTL": {
+    "chain": "ethereum",
+    "address": "0x1FA0E1bA4Be417145b8cEF9B3D299B8B41d8c983",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SHELL": {
+    "chain": "bsc",
+    "address": "0x1D519280255d5D90F469f79dC8f5ABE05F64429f",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "LRC": {
+    "chain": "ethereum",
+    "address": "0x8878Df9E1A7c87dcBf6d3999D997f262C05D8C70",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "IMX": {
+    "chain": "ethereum",
+    "address": "0xFd76bE67FFF3BAC84E3D5444167bbC018f5968b6",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "NOT": {
+    "chain": "ton",
+    "address": "EQCaY8Ifl2S6lRBMBJeY35LIuMXPc8JfItWG4tl7lBGrSoR2",
+    "dex": "stonfi",
+    "verified": false,
+    "updated": 0
+  },
+  "REQ": {
+    "chain": "ethereum",
+    "address": "0xDf47636BF318f9d5cc9AaFe38f7e7BF893d58fAc",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "STG": {
+    "chain": "ethereum",
+    "address": "0x3211C6cBeF1429da3D0d58494938299C92Ad5860",
+    "dex": "curve",
+    "verified": false,
+    "updated": 0
+  },
+  "XION": {
+    "chain": "osmosis",
+    "address": "2444-ibc_2E3784772E70F7B3A638BA88F65C8BE125D3CDB6E28C6AABC51098C94F5E16A5-ibc_498A0751C798A0D9A389AA3691123DADA57DAA4FE165D5C75894505B876BA6E4",
+    "dex": "osmosis",
+    "verified": false,
+    "updated": 0
+  },
+  "AEVO": {
+    "chain": "ethereum",
+    "address": "0x62e0d3fD804dfBf02d08eE632E9634dBa5c00D03",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MAVIA": {
+    "chain": "solana",
+    "address": "8yM85GygaXRj14JqTp7z6Q3FkrwKQsECxTzpVcoXK2fU",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "IRYS": {
+    "chain": "bsc",
+    "address": "0xB46558AD50Ffe063ea8CA5166d7681f79c1cC3c6",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "POWER": {
+    "chain": "bsc",
+    "address": "0x73eA6cc8d4DCfaF52d309800F8428D57e6dc3a2b",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CHR": {
+    "chain": "bsc",
+    "address": "0x6045931E511EF7e53A4A817F971e0CA28c758809",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "UAI": {
+    "chain": "bsc",
+    "address": "0x67ac3f3c3386Cae1e900f3d03840190055eDb941",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SANTOS": {
+    "chain": "bsc",
+    "address": "0x06043B346450BbCfdE066ebc39fdc264FdFFeD74",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MOVE": {
+    "chain": "movement",
+    "address": "0xe998ed2e3bb061a739b174b4b84099a85bc63748ff83136246a64cf3d62233b9",
+    "dex": "yuzu",
+    "verified": false,
+    "updated": 0
+  },
+  "XTZ": {
+    "chain": "solana",
+    "address": "EAEosSnTWPCh4sYpdgcLeU4SxAic8HaGxf5oHaeeo9Fz",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "RED": {
+    "chain": "ethereum",
+    "address": "0x8faf0d741d6c7b9d3295621339aada1d6a5b925dcb10f780084d604ec2092c93",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ENS": {
+    "chain": "ethereum",
+    "address": "0x09Aa63b7a22eEfC372196AaCd5b53441eD390BFb",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MLN": {
+    "chain": "ethereum",
+    "address": "0x15ab0333985FD1E289adF4fBBe19261454776642",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "HIGH": {
+    "chain": "ethereum",
+    "address": "0x3854612b93B140726167cCA5418B01E832515d42",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SPK": {
+    "chain": "ethereum",
+    "address": "0x39f748f252ffff5f2cb755824bd46bd4c0720ffcec1ed128b38a1049a0e70496",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SD": {
+    "chain": "ethereum",
+    "address": "0xc3a55d8f14b35fa236dbb14ae1968e787f059bc03d43ed4ceabf25c589548fc5",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "COMP": {
+    "chain": "ethereum",
+    "address": "0xea4Ba4CE14fdd287f380b55419B1C5b6c3f22ab6",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BMT": {
+    "chain": "bsc",
+    "address": "0x09F9789CF2DbA13e6E1cE8Cfdcd3F751D2917fc5",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "IOTA": {
+    "chain": "solana",
+    "address": "Hiz94qdvziYfJbg81JTWu6pXdo96gXHXrw3XFrtwC4oz",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "MELANIA": {
+    "chain": "solana",
+    "address": "9DiruRpjnAnzhn6ts5HGLouHtJrT1JGsPbXNYCrFz2ad",
+    "dex": "meteora",
+    "verified": false,
+    "updated": 0
+  },
+  "LPT": {
+    "chain": "arbitrum",
+    "address": "0x4fD47e5102DFBF95541F64ED6FE13d4eD26D2546",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "FUN": {
+    "chain": "ethereum",
+    "address": "0x747ba49077e00554e47f76dd716006ec3aa6786db984141eac9c8f6c843b624a",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ELX": {
+    "chain": "ethereum",
+    "address": "0xe77F11E28494226ed5048c8d9e62BB066F1Ec119",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CELO": {
+    "chain": "celo",
+    "address": "0xb460F9Ae1fEa4f77107146C1960bb1C978118816",
+    "dex": "ubeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "PORTAL": {
+    "chain": "solana",
+    "address": "AVjUdvJxZUfiiDNCES7PwszxBagmsRpgAKHHQ5NvtiG4",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "SYN": {
+    "chain": "ethereum",
+    "address": "0x4A86C01d67965f8cB3d0AAA2c655705E64097C31",
+    "dex": "sushiswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CLO": {
+    "chain": "bsc",
+    "address": "0xeA4d99d5fbBb904EE980C86EE2d376c36CFA0434",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "POND": {
+    "chain": "ethereum",
+    "address": "0xd18748B9839b0081a867A1a871D5b562B2eC9884",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "STO": {
+    "chain": "bsc",
+    "address": "0x2ad2651A07b4949C0F892CFa27C3C73fb3b020f6",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "PROM": {
+    "chain": "bsc",
+    "address": "0x83E98cAC01259a0D00729cfB722810472C421459",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "IP": {
+    "chain": "solana",
+    "address": "EJDvAg9wbyLna13M37tUZ65knHWKTJ1Coq85yFt42Wen",
+    "dex": "meteora",
+    "verified": false,
+    "updated": 0
+  },
+  "VANA": {
+    "chain": "base",
+    "address": "0x06E437f232A08ecAA502B85ae2F098be3853A875",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "ACS": {
+    "chain": "solana",
+    "address": "Go1hKVCy6mJA5usvHNV74KjkexXG2AUporDMeda5icmb",
+    "dex": "orca",
+    "verified": false,
+    "updated": 0
+  },
+  "ANKR": {
+    "chain": "bsc",
+    "address": "0x5588fd3000e66C2e35239F822c55690599f08d9d",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "RARE": {
+    "chain": "ethereum",
+    "address": "0xc5e82ff54924a7232a3e91ca252d505f4e4417afa2b6a8507dfb691182cd0b16",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SPELL": {
+    "chain": "ethereum",
+    "address": "0xb5De0C3753b6E1B4dBA616Db82767F17513E6d4E",
+    "dex": "sushiswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AWE": {
+    "chain": "base",
+    "address": "0xcb7f520d18141E36956fE0b3A6Bc3D4F11245521",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "YZY": {
+    "chain": "solana",
+    "address": "DQ9weJhfiU4iL5LUoeshDrm5KxDHCMiSbnnKJz7buMcf",
+    "dex": "meteora",
+    "verified": false,
+    "updated": 0
+  },
+  "SEEK": {
+    "chain": "ethereum",
+    "address": "0xfE298bc90B82EA28033B054D6417d0368a678dA3",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "OBOL": {
+    "chain": "ethereum",
+    "address": "0x29ecbccc2be2c0c9f87f4f84438bc9756a88f7cfe5ee91649a01240ae2242093",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AVA": {
+    "chain": "bsc",
+    "address": "0x5734a2460Ab02547e56d54A7C15E4B513c78E8c1",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "OM": {
+    "chain": "ethereum",
+    "address": "0xe46935aE80E05cdEbD4a4008B6ccaA36d2845370",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "PLUME": {
+    "chain": "ethereum",
+    "address": "0xD845AcDeb03fB3295E7735C232C588efc441D903",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SNT": {
+    "chain": "ethereum",
+    "address": "0x084B5191Bd08412952337b1108b6e5942418928f",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "VOXEL": {
+    "chain": "polygon",
+    "address": "0xF4Ad214434071923Dec64375961f2555947d789C",
+    "dex": "quickswap",
+    "verified": false,
+    "updated": 0
+  },
+  "YFI": {
+    "chain": "base",
+    "address": "0x1524a14C55f097bb54F0b24383f3ae3e3743804A",
+    "dex": "aerodrome",
+    "verified": false,
+    "updated": 0
+  },
+  "BOBA": {
+    "chain": "boba",
+    "address": "0x247442181b8bAA03b3c7DC0D8e971bD4686db27c",
+    "dex": "sushiswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BAY": {
+    "chain": "bsc",
+    "address": "0xD1E48E9BB2631ed512aB65C9E6699920c484c3a4",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MAGIC": {
+    "chain": "base",
+    "address": "0x3c0AE164970Ab9eC216cF1b7Ae3118766Ab65e43",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "DMC": {
+    "chain": "sui",
+    "address": "0xa288810f820498f7c2bca41cfadea3e99bd152b3dbeb2c282bb4b9c909f71c6d",
+    "dex": "cetus",
+    "verified": false,
+    "updated": 0
+  },
+  "JOE": {
+    "chain": "avalanche",
+    "address": "0x454E67025631C065d3cFAD6d71E6892f74487a15",
+    "dex": "traderjoe",
+    "verified": false,
+    "updated": 0
+  },
+  "SVSA": {
+    "chain": "bsc",
+    "address": "0x7A718Fd5BeCB64d37A6B8eD38e54F706aeaf7B0D",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "LONG": {
+    "chain": "bsc",
+    "address": "0x2C44B5FC948510133947995991f8988ba88a3477",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "FLUX": {
+    "chain": "base",
+    "address": "0xac070e26ea329cD3576c60967F81E775a63dA6c4",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ATA": {
+    "chain": "bsc",
+    "address": "0xeF7767677867552CFA699148b96a03358A9be779",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "GLM": {
+    "chain": "ethereum",
+    "address": "0xff701d6e2fb193e038fe403329b56fc0d5763f8b4eb7706e6f8855c4802b7211",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AGI": {
+    "chain": "bsc",
+    "address": "0x27795f5310232b241934ab4E1EC520d17A8b16B9",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SKATE": {
+    "chain": "bsc",
+    "address": "0x4C9B6E5EC402178046E1C426838c4916Eb830534",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "USUAL": {
+    "chain": "ethereum",
+    "address": "0x4b43f8fb1a3c884261ae6f1e0d6d3d16203475335bdefe45f547f32db15eceb0",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ZBT": {
+    "chain": "solana",
+    "address": "GCwuKoAo5EAkd7F36KVSS5AwGPdGeYK6WCqepyeGJZ1b",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "SSV": {
+    "chain": "ethereum",
+    "address": "0x0A55882F4E1117ADc54aFbbac4A39079AD52fB89",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "DIA": {
+    "chain": "ethereum",
+    "address": "0xe8efb700b4eddb30f7a45bdbf55391faf8148adeb318401359d3897e23612571",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "EAT": {
+    "chain": "solana",
+    "address": "HSWWBSubMBWAqatcdwa8xRcD53qkg1bQTVTijRGinmZG",
+    "dex": "orca",
+    "verified": false,
+    "updated": 0
+  },
+  "BEAT": {
+    "chain": "bsc",
+    "address": "0xE5f1395eFce39A2AC238B63f79DbC5d524C85dcc",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ID": {
+    "chain": "ethereum",
+    "address": "0x0143B80d682d2b6fb8945f47b7D199841ab8184C",
+    "dex": "sushiswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SFP": {
+    "chain": "bsc",
+    "address": "0x64ebB904e169cB94e9788FcB68283B4C894ED881",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CORL": {
+    "chain": "bsc",
+    "address": "0xd17C012F90838EF526656468124C63b466AcEdCd",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ARIAIP": {
+    "chain": "story",
+    "address": "0x5A4cFFa1ea84ff371736de20e61F3e437c9a67EC",
+    "dex": "piperx",
+    "verified": false,
+    "updated": 0
+  },
+  "PRCL": {
+    "chain": "solana",
+    "address": "7AhWSjMiXtxgZ6tB39V65sF3Rguv6arkbLWyk2v9MxRV",
+    "dex": "orca",
+    "verified": false,
+    "updated": 0
+  },
+  "POWR": {
+    "chain": "ethereum",
+    "address": "0xE3FE800B0de664bf0bCa8aD58eCbc73B259047b0",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "PIEVERSE": {
+    "chain": "solana",
+    "address": "8BpKUXzZDgTykCAfyz8rUfWgFNUQn7ysNMVqqnd6rqX4",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "USTC": {
+    "chain": "osmosis",
+    "address": "560-ibc_BE1BB42D4BE3C30D50B68D7C41DB4DFCE9678E8EF8C539F6E6A9345048894FCC-uosmo",
+    "dex": "osmosis",
+    "verified": false,
+    "updated": 0
+  },
+  "TURTLE": {
+    "chain": "linea",
+    "address": "0x4f4c0EfBc6EB3893269a790DA5f1D64A324df570",
+    "dex": "etherex",
+    "verified": false,
+    "updated": 0
+  },
+  "JASMY": {
+    "chain": "ethereum",
+    "address": "0x4d1Eff861316396dD1915F69B49f4C2d7B11590d",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SAND": {
+    "chain": "ethereum",
+    "address": "0x3dd49f67E9d5Bc4C5E6634b3F70BfD9dc1b6BD74",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "OBT": {
+    "chain": "bsc",
+    "address": "0xd919Dc242Bb1E8A823Da9cdb9806E3D211265f47",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ENJ": {
+    "chain": "ethereum",
+    "address": "0xE56c60B5f9f7B5FC70DE0eb79c6EE7d00eFa2625",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "EPT": {
+    "chain": "bsc",
+    "address": "0x9b24b1716Fc977708755EbFd523a6aE2119b787b",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "IOST": {
+    "chain": "solana",
+    "address": "Cq87WQmfqbM8yjTzXrJrimGko8Bt7uuqj25WDmQwwKt9",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "BABY": {
+    "chain": "osmosis",
+    "address": "2904-ibc_EC3A4ACBA1CFBEE698472D3563B70985AEA5A7144C319B61B3EBDFB57B5E1535-factory_osmo1z6r6qdknhgsc0zeracktgpcxf43j6sekq07nw8sxduc9lg0qjjlqfu25e3_alloyed_allBTC",
+    "dex": "osmosis",
+    "verified": false,
+    "updated": 0
+  },
+  "COTI": {
+    "chain": "ethereum",
+    "address": "0xA2b04F8133fC25887A436812eaE384e32A8A84F2",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BDX": {
+    "chain": "bsc",
+    "address": "0xA06eDAe68062d4203D2Eba0D0159d70d5c556Ed7",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CYS": {
+    "chain": "bsc",
+    "address": "0x1C5933fD04Dabbd999314C082FD888BfDd697993",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BLAST": {
+    "chain": "blast",
+    "address": "0x9A0AA28d999a21d3cf6F2703CDBba9FeAF4a32F7",
+    "dex": "thruster",
+    "verified": false,
+    "updated": 0
+  },
+  "NIL": {
+    "chain": "ethereum",
+    "address": "0xc63eb6794f7b98afa83a350eceb9052401c6da65e2e27d8b3479e12bbc720b91",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "DOGS": {
+    "chain": "ton",
+    "address": "EQBjB_2TLdpOhhj25F_gYmM6fMb8hbI3rx-EA4g_ALr9O0RJ",
+    "dex": "dedust",
+    "verified": false,
+    "updated": 0
+  },
+  "IO": {
+    "chain": "solana",
+    "address": "DeC8TwoqTD8q5iQ9eG8L5syAvzadA4yMXpSgxywA6uxe",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "BTX": {
+    "chain": "bsc",
+    "address": "0x996A155A2BE7729Ae90884795EA61691FBE84079",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ORBS": {
+    "chain": "ethereum",
+    "address": "0xC98B3B8C7CC0D7D925d1a407347b845D9F001391",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "RPL": {
+    "chain": "ethereum",
+    "address": "0xe42318eA3b998e8355a3Da364EB9D48eC725Eb45",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "NMR": {
+    "chain": "ethereum",
+    "address": "0x4b1F895066058662B9fA885E87a4E4159bE0798a",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "L3": {
+    "chain": "ethereum",
+    "address": "0x96d5f7d1b0c6375d5399f512c88db18d6e92e5688cbb5548d098225416d798bd",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "C98": {
+    "chain": "bsc",
+    "address": "0x92247860A03F48d5c6425c7CA35CDcFCB1013AA1",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CTK": {
+    "chain": "bsc",
+    "address": "0x460b4193Ec4C1a17372Aa5FDcd44c520ba658646",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AMP": {
+    "chain": "ethereum",
+    "address": "0x15e86E6f65EF7EA1dbb72A5E51a07926fB1c82E3",
+    "dex": "sushiswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AI": {
+    "chain": "base",
+    "address": "0xeD5210Bd97d855E8BEc2389439B8487eEcC3FC60",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "TREE": {
+    "chain": "ethereum",
+    "address": "0x63f5342442628ded4f084f6ba32bcec4f6ae3bf45c43c5834704b4beb903eea2",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "TNSR": {
+    "chain": "solana",
+    "address": "7LqL8hDYVYBgoif19fSozZurxm3ve129tfkftz6WdFkR",
+    "dex": "meteora",
+    "verified": false,
+    "updated": 0
+  },
+  "SCRT": {
+    "chain": "osmosis",
+    "address": "1095-ibc_0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A-uosmo",
+    "dex": "osmosis",
+    "verified": false,
+    "updated": 0
+  },
+  "RDNT": {
+    "chain": "bsc",
+    "address": "0x346575fC7f07E6994D76199E41D13dC1575322E1",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "HYPER": {
+    "chain": "bsc",
+    "address": "0x0d3944cB515ecae653e6CC85EEebc1ec1505871B",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "GALA": {
+    "chain": "solana",
+    "address": "2sHVae7hEj3HpgjPwkwaFMhjZT4veY9U55fF8CxqLSwG",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "ZRX": {
+    "chain": "ethereum",
+    "address": "0x14424eEeCbfF345B38187d0B8b749E56FAA68539",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "WOO": {
+    "chain": "ethereum",
+    "address": "0x6AdA49AECCF6E556Bb7a35ef0119Cc8ca795294A",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AXS": {
+    "chain": "ethereum",
+    "address": "0x0C365789DbBb94A29F8720dc465554c587e897dB",
+    "dex": "sushiswap",
+    "verified": false,
+    "updated": 0
+  },
+  "TUT": {
+    "chain": "bsc",
+    "address": "0x6dAfBf0AB4FD72e2a5C0Ad5a1ED277d3bf8a8d1f",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "FARM": {
+    "chain": "ethereum",
+    "address": "0x56feAccb7f750B997B36A68625C7C596F0B41A58",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MEME": {
+    "chain": "ethereum",
+    "address": "0xaa242cffe405da0c0679ec04b6ce824fad4626db4d165454dd2d211ae4407a7a",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "PHA": {
+    "chain": "ethereum",
+    "address": "0x8867f20c1c63bAcCEc7617626254a060eEb0E61e",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "DODO": {
+    "chain": "ethereum",
+    "address": "0x68Fa181c720C07B7FF7412220E2431ce90A65A14",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "VET": {
+    "chain": "bsc",
+    "address": "0x6f4919d08bdEB1AAdfEAE4DA97CcEbFa370008f6",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "XAI": {
+    "chain": "arbitrum",
+    "address": "0xba1CF57b1A7401Cc24622366808CeA1f209a2c50",
+    "dex": "camelot",
+    "verified": false,
+    "updated": 0
+  },
+  "EUR": {
+    "chain": "xrpl",
+    "address": "EUR.rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq_XRP",
+    "dex": "xrpl",
+    "verified": false,
+    "updated": 0
+  },
+  "GPS": {
+    "chain": "bsc",
+    "address": "0x8943A75f4D0D1BAbEa4cd77eabC323127714CAA4",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "FIDA": {
+    "chain": "solana",
+    "address": "A73SMfz2Skp4PkQpDd1UrMiwaseazk5wKKAWKf96Dcys",
+    "dex": "orca",
+    "verified": false,
+    "updated": 0
+  },
+  "STORJ": {
+    "chain": "ethereum",
+    "address": "0xAEF16913b6C50EBCf627a394921F306985FC8604",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "UMA": {
+    "chain": "ethereum",
+    "address": "0x247ad09d986efadc48ae5c8be65ab1dd799cf1ff1c5b2ab8a21a8ee1410f8cbb",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "TLM": {
+    "chain": "bsc",
+    "address": "0xE6b421a4408c82381b226Ab5B6F8C4b639044359",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ZETA": {
+    "chain": "ethereum",
+    "address": "0x738ea57616FA9dab407E9e7920d446eAF4E7eAAa",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "API3": {
+    "chain": "ethereum",
+    "address": "0x81a98ae40148e298c77bd43082c6baf2b69c2940e3815c6b56c11dd2c467b05f",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CORE": {
+    "chain": "xrpl",
+    "address": "434F524500000000000000000000000000000000.rcoreNywaoz2ZCQ8Lg2EbSLnGuRBmun6D_XRP",
+    "dex": "xrpl",
+    "verified": false,
+    "updated": 0
+  },
+  "LISA": {
+    "chain": "ethereum",
+    "address": "0x7e883482C072F0100A713796C7375D9a55D0CD82",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "AERGO": {
+    "chain": "ethereum",
+    "address": "0x9E48FaDf799E0513d2EF4631478ea186741fA617",
+    "dex": "sushiswap",
+    "verified": false,
+    "updated": 0
+  },
+  "NB": {
+    "chain": "bsc",
+    "address": "0x4d7Ba641Cb088c142F68ACa00bD2b285150006B6",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "TRU": {
+    "chain": "ethereum",
+    "address": "0xeC6a6b7dB761A5c9910bA8fcaB98116d384b1B85",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "FORTH": {
+    "chain": "ethereum",
+    "address": "0xC1dF8037881df17Dc88998824b9aeA81c71bbB1b",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ES": {
+    "chain": "ethereum",
+    "address": "0x10c4E72abd373295e613e3D2C2C5067d33a0e4a8",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ALICE": {
+    "chain": "bsc",
+    "address": "0xcAD7019D6d84a3294b0494aEF02e73BD0f2572Eb",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "WAXP": {
+    "chain": "ethereum",
+    "address": "0xe61CEDEb1593E2D9f06af1e212842C8B5E289863",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "VOOI": {
+    "chain": "ethereum",
+    "address": "0x8eb93dfd322f357bfe50d78dffbc3353d107e950eb7c9306cafd74fcafe9afbf",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SLP": {
+    "chain": "ethereum",
+    "address": "0x8597fa0773888107E2867D36dd87Fe5bAFeAb328",
+    "dex": "sushiswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CYBER": {
+    "chain": "solana",
+    "address": "BtVAiWzs9p8gXy6Hz8oYK1G4SvMuVbkhf8uscvKpjuw",
+    "dex": "meteora",
+    "verified": false,
+    "updated": 0
+  },
+  "RTX": {
+    "chain": "bsc",
+    "address": "0xD5386AE583Cd8d19E845Fd750695B5a6821a4096",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BARD": {
+    "chain": "ethereum",
+    "address": "0xb5d957D6E4129c739a0B87fFB7ff33C7cea8816F",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "CHZ": {
+    "chain": "ethereum",
+    "address": "0x325365ED8275f6a74cac98917b7f6FaCe8da533b",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "PEOPLE": {
+    "chain": "ethereum",
+    "address": "0x14f2eb0d4320582cec1d5f62ea52244d1c047a756719df2c75d2cddb18c3ef83",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "LYN": {
+    "chain": "bsc",
+    "address": "0x98F7781b7eb8180613251F5d6F4429b843084E7b",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "MANA": {
+    "chain": "ethereum",
+    "address": "0x11b1f53204d03E5529F09EB3091939e4Fd8c9CF3",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "RLC": {
+    "chain": "ethereum",
+    "address": "0x75382c52b6F90B3f8014BfcadAC2386513F1e3bC",
+    "dex": "sushiswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SC": {
+    "chain": "solana",
+    "address": "BSzedbEvWRqVksaF558epPWCM16avEpyhm2HgSq9WZyy",
+    "dex": "raydium",
+    "verified": false,
+    "updated": 0
+  },
+  "HOT": {
+    "chain": "ethereum",
+    "address": "0xf7849D0852FC588210B9C0d8b26F43C0c9bc1470",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "SAGA": {
+    "chain": "osmosis",
+    "address": "1670-ibc_094FB70C3006906F67F5D674073D2DAFAFB41537E7033098F5C752F211E7B6C2-uosmo",
+    "dex": "osmosis",
+    "verified": false,
+    "updated": 0
+  },
+  "RUSSELL": {
+    "chain": "base",
+    "address": "0xEA8B7ED6170E0ea3703DdE6B496B065A8eCECd7B",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "PYR": {
+    "chain": "polygon",
+    "address": "0x941061770214613BA0ca3db9A700c39587bb89B6",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "LAZIO": {
+    "chain": "bsc",
+    "address": "0x11c0b2BB4fbB430825d07507A9E24e4c32f7704D",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "GAIX": {
+    "chain": "bsc",
+    "address": "0xD6FE031900f91fFc3A8E90Ea7d9719E2188E9706",
+    "dex": "pancakeswap",
+    "verified": false,
+    "updated": 0
+  },
+  "FLOW": {
+    "chain": "solana",
+    "address": "7QJ5qZKVAEjbUFozytnSNDTbMgNs6URo8Cd1ZxqkYyDX",
+    "dex": "pumpswap",
+    "verified": false,
+    "updated": 0
+  },
+  "ZKP": {
+    "chain": "bsc",
+    "address": "0x5f646AE2Ba04a83028064c76C7B1967547753BFa",
+    "dex": "uniswap",
+    "verified": false,
+    "updated": 0
+  },
+  "BELIEVE": {
+    "chain": "solana",
+    "address": "BJsSymifLkwUq8r3KMSiFH6t5JbLLBd1VJDgzD7qYNxF",
+    "dex": "meteora",
+    "verified": true,
+    "updated": 1766491476
+  },
+  "MAT": {
+    "chain": "bsc",
+    "address": "0x5eB4A369E7a446F6f24E8f3E8f27eEC35197618f",
+    "dex": "pancakeswap",
+    "verified": true,
+    "updated": 1766491546
+  },
+  "PERP": {
+    "chain": "ethereum",
+    "address": "0xf66369997ae562BC9eeC2AB9541581252f9Ca383",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1766491554
+  },
+  "AIA": {
+    "chain": "bsc",
+    "address": "0xADEDafd06CC16Dec264Fb02D3f8570E072DAEe35",
+    "dex": "pancakeswap",
+    "verified": true,
+    "updated": 1766491556
+  },
+  "XCX": {
+    "chain": "bsc",
+    "address": "0x8C4c97D6A279C6A3eb63348C760FF0153AA779EE",
+    "dex": "pancakeswap",
+    "verified": true,
+    "updated": 1766491638
+  },
+  "RAD": {
+    "chain": "ethereum",
+    "address": "0x8C1c499b1796D7F3C2521AC37186B52De024e58c",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1766492327
+  },
+  "MGO": {
+    "chain": "bsc",
+    "address": "0x83bD3CEaDc3c19Af0264157f4b70F0402C9BB3a8",
+    "dex": "pancakeswap",
+    "verified": true,
+    "updated": 1766492371
+  },
+  "CHILLHOUSE": {
+    "chain": "solana",
+    "address": "35TqQMeiRwEbK6FR5qiPwastuAAvo32VjnULJpxVSxUK",
+    "dex": "pumpswap",
+    "verified": true,
+    "updated": 1766492519
+  },
+  "NAVX": {
+    "chain": "sui",
+    "address": "0x0254747f5ca059a1972cd7f6016485d51392a3fde608107b93bbaebea550f703",
+    "dex": "cetus",
+    "verified": true,
+    "updated": 1766492603
+  },
+  "CARDS": {
+    "chain": "solana",
+    "address": "HnhpJPJgBG2KwniMTNW8cVBHvk1hFog3RC3kjnyc23tD",
+    "dex": "raydium",
+    "verified": true,
+    "updated": 1766492683
+  },
+  "LMTS": {
+    "chain": "base",
+    "address": "0x33645A0fe56fC3232EE69a48DfDE494b5f8A305C",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1766493439
+  }
+}
