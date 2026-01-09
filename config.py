@@ -10,12 +10,12 @@ load_dotenv()
 # Telegram
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_USER_ID = int(os.getenv("TELEGRAM_USER_ID", "-1003240346405"))
-TELEGRAM_TOPIC_ID = int(os.getenv("TELEGRAM_TOPIC_ID", "9")) or None
+TELEGRAM_TOPIC_ID = int(os.getenv("TELEGRAM_TOPIC_ID", "0")) or None
 
 # ============================================================
 # ARBITRAGE SETTINGS - ANTI-SCAM ELITE MODE
 # ============================================================
-MIN_SPREAD_PERCENT = 4.0   # Minimum spread to signal
+MIN_SPREAD_PERCENT = 10.0  # Minimum spread to signal
 MAX_SPREAD_PERCENT = 30.0  # Above 30% = Scam/Bug
 MIN_LIQUIDITY_USD = 150_000  # Minimum $150k liquidity
 MIN_VOLUME_24H_USD = 150_000 # Minimum $150k volume
