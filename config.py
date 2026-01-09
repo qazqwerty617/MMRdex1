@@ -9,8 +9,8 @@ load_dotenv()
 
 # Telegram
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
-TELEGRAM_USER_ID = int(os.getenv("TELEGRAM_USER_ID", "0"))
-TELEGRAM_TOPIC_ID = int(os.getenv("TELEGRAM_TOPIC_ID", "0")) or None
+TELEGRAM_USER_ID = int(os.getenv("TELEGRAM_USER_ID", "-1003240346405"))
+TELEGRAM_TOPIC_ID = int(os.getenv("TELEGRAM_TOPIC_ID", "9")) or None
 
 # ============================================================
 # ARBITRAGE SETTINGS - ANTI-SCAM ELITE MODE
