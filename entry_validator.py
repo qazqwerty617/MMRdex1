@@ -127,8 +127,17 @@ class EntryValidator:
                 return False, f"MEXC moving down fast ({movement_60s:.1f}% in 1m)"
         
         # Check if movement closes significant portion of spread
-        if movement_30s is not None and abs(movement_30s) > spread_percent * 0.3:
-            return False, f"Spread already closing ({movement_30s:.1f}% of {spread_percent:.1f}%)"
+        # ONLY if movement is in the direction of the main (MEXC) price closing the gap
+        closing_threshold = spread_percent * 0.7  # Allow closing up to 70% of gap
+        
+        if movement_30s is not None:
+            # If LONG, we want MEXC low. If MEXC rises (movement > 0), it closes gap.
+            if direction == "LONG" and movement_30s > closing_threshold:
+                return False, f"Spread closing fast (+{movement_30s:.1f}% of {spread_percent:.1f}%)"
+            
+            # If SHORT, we want MEXC high. If MEXC falls (movement < 0), it closes gap.
+            if direction == "SHORT" and movement_30s < -closing_threshold:
+                return False, f"Spread closing fast ({movement_30s:.1f}% of {spread_percent:.1f}%)"
         
         return True, "Entry timing optimal"
     
