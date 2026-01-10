@@ -260,10 +260,10 @@ class TurboScanner:
         should_signal, intel_reason = self.token_intelligence.should_signal(
             symbol, direction, 
             min_score=self.min_quality_score,
-            min_win_rate=0.35
+            min_win_rate=0.25 # Relaxed from 0.35
         )
         if not should_signal:
-            logger.debug(f"[INTEL] Skip {symbol}: {intel_reason}")
+            logger.info(f"🚫 [INTEL] Skip {symbol}: {intel_reason} (Spread: {abs_spread:.1f}%)")
             return None
         
         # ===== STAGE 4: Convergence check =====
@@ -271,23 +271,23 @@ class TurboScanner:
             symbol, min_score=self.min_quality_score
         )
         if not should_signal:
-            logger.debug(f"[CONVERGENCE] Skip {symbol}: {conv_reason}")
+            logger.info(f"🚫 [CONVERGENCE] Skip {symbol}: {conv_reason} (Spread: {abs_spread:.1f}%)")
             return None
         
         # ===== STAGE 5: Momentum confirmation =====
         momentum_ok, momentum_reason = self.momentum_tracker.confirms_direction(
-            symbol, direction, min_strength=2.0
+            symbol, direction, min_strength=0.5 # Relaxed from 2.0
         )
         if not momentum_ok:
-            logger.debug(f"[MOMENTUM] Skip {symbol}: {momentum_reason}")
+            logger.info(f"🚫 [MOMENTUM] Skip {symbol}: {momentum_reason} (Spread: {abs_spread:.1f}%)")
             return None
         
         # ===== STAGE 6: Entry validation =====
         entry_ok, entry_reason = self.entry_validator.validate_entry(
-            symbol, direction, abs_spread, max_movement=0.5
+            symbol, direction, abs_spread, max_movement=3.0 # Relaxed from 0.5
         )
         if not entry_ok:
-            logger.debug(f"[ENTRY] Skip {symbol}: {entry_reason}")
+            logger.info(f"🚫 [ENTRY] Skip {symbol}: {entry_reason} (Spread: {abs_spread:.1f}%)")
             return None
         
         entry_quality = self.entry_validator.get_entry_quality(symbol, direction, abs_spread)
