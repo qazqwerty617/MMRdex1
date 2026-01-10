@@ -15,12 +15,12 @@ TELEGRAM_TOPIC_ID = int(os.getenv("TELEGRAM_TOPIC_ID", "9")) or None
 # ============================================================
 # ARBITRAGE SETTINGS - ANTI-SCAM ELITE MODE
 # ============================================================
-MIN_SPREAD_PERCENT = 5.0   # Minimum spread to signal
-MAX_SPREAD_PERCENT = 30.0  # Above 30% = Scam/Bug
-MIN_LIQUIDITY_USD = 50_000    # Minimum $50k liquidity
-MIN_VOLUME_24H_USD = 50_000   # Minimum $50k volume
-MIN_FDV_USD = 1_000_000       # Minimum $1M FDV
-MIN_TXNS_24H = 100            # Minimum 100 trades/day
+MIN_SPREAD_PERCENT = 0.5   # DEBUG: 0.5% to force signals
+MAX_SPREAD_PERCENT = 40.0  
+MIN_LIQUIDITY_USD = 2_000     # DEBUG: $2k
+MIN_VOLUME_24H_USD = 2_000    # DEBUG: $2k
+MIN_FDV_USD = 100_000         # DEBUG: $100k
+MIN_TXNS_24H = 10             # DEBUG: 10 trades
 
 # ============================================================
 # TRADING FEES (Futures Only Strategy)
@@ -34,19 +34,19 @@ TOTAL_FEES_PERCENT = (MEXC_TAKER_FEE * 2 + SLIPPAGE_ESTIMATE) * 100
 # INTELLIGENCE THRESHOLDS - NEW v4.0
 # ============================================================
 # Minimum quality score to send signal (0-10 scale)
-MIN_QUALITY_SCORE = 3.0
+MIN_QUALITY_SCORE = 1.0  # DEBUG
 
 # Minimum token win rate to signal (0-1 scale)
-MIN_WIN_RATE = 0.25
+MIN_WIN_RATE = 0.10  # DEBUG
 
 # Minimum entry timing quality (0-10 scale)
-MIN_ENTRY_QUALITY = 2.0
+MIN_ENTRY_QUALITY = 1.0
 
 # Max MEXC movement before entry is "too late" (%)
-MAX_ENTRY_MOVEMENT = 1.0
+MAX_ENTRY_MOVEMENT = 3.0
 
 # Minimum momentum strength to require alignment
-MIN_MOMENTUM_STRENGTH = 1.5
+MIN_MOMENTUM_STRENGTH = 0.5
 
 # ============================================================
 # CONVERGENCE SETTINGS
