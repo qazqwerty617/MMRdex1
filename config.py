@@ -15,12 +15,12 @@ TELEGRAM_TOPIC_ID = int(os.getenv("TELEGRAM_TOPIC_ID", "9")) or None
 # ============================================================
 # ARBITRAGE SETTINGS - ANTI-SCAM ELITE MODE
 # ============================================================
-MIN_SPREAD_PERCENT = 10.0  # Minimum spread to signal
+MIN_SPREAD_PERCENT = 5.0   # Minimum spread to signal
 MAX_SPREAD_PERCENT = 30.0  # Above 30% = Scam/Bug
-MIN_LIQUIDITY_USD = 150_000  # Minimum $150k liquidity
-MIN_VOLUME_24H_USD = 150_000 # Minimum $150k volume
-MIN_FDV_USD = 3_000_000      # Minimum $3M FDV
-MIN_TXNS_24H = 300           # Minimum 300 trades/day
+MIN_LIQUIDITY_USD = 50_000    # Minimum $50k liquidity
+MIN_VOLUME_24H_USD = 50_000   # Minimum $50k volume
+MIN_FDV_USD = 1_000_000       # Minimum $1M FDV
+MIN_TXNS_24H = 100            # Minimum 100 trades/day
 
 # ============================================================
 # TRADING FEES (Futures Only Strategy)
@@ -34,19 +34,19 @@ TOTAL_FEES_PERCENT = (MEXC_TAKER_FEE * 2 + SLIPPAGE_ESTIMATE) * 100
 # INTELLIGENCE THRESHOLDS - NEW v4.0
 # ============================================================
 # Minimum quality score to send signal (0-10 scale)
-MIN_QUALITY_SCORE = 4.0
+MIN_QUALITY_SCORE = 3.0
 
 # Minimum token win rate to signal (0-1 scale)
-MIN_WIN_RATE = 0.35
+MIN_WIN_RATE = 0.25
 
 # Minimum entry timing quality (0-10 scale)
-MIN_ENTRY_QUALITY = 3.0
+MIN_ENTRY_QUALITY = 2.0
 
 # Max MEXC movement before entry is "too late" (%)
-MAX_ENTRY_MOVEMENT = 0.5
+MAX_ENTRY_MOVEMENT = 1.0
 
 # Minimum momentum strength to require alignment
-MIN_MOMENTUM_STRENGTH = 2.0
+MIN_MOMENTUM_STRENGTH = 1.5
 
 # ============================================================
 # CONVERGENCE SETTINGS
@@ -56,7 +56,7 @@ EXCELLENT_CONVERGENCE_SEC = 300   # <5min = Excellent
 POOR_CONVERGENCE_SEC = 3600       # >1h = Poor
 
 # Minimum convergence rate to not blacklist token
-MIN_CONVERGENCE_RATE = 0.30  # 30%
+MIN_CONVERGENCE_RATE = 0.20  # 20%
 
 # ============================================================
 # MAJOR TOKENS
