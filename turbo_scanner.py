@@ -180,6 +180,7 @@ class TurboScanner:
         # PARALLEL processing - scan all chains at once
         tasks = []
         for chain, addresses in batches.items():
+            for i in range(0, len(addresses), DEXSCREENER_BATCH_SIZE):
                 chunk = addresses[i:i + DEXSCREENER_BATCH_SIZE]
                 tasks.append(self._scan_batch(chain, chunk, mexc_prices))
         
