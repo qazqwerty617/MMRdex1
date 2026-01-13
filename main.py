@@ -30,7 +30,7 @@ from database import init_db, get_token_stats, get_db
 from mexc_client import MEXCClient
 from mexc_ws import get_ws_client
 from dexscreener_client import DexScreenerClient
-from turbo_scanner import TurboScanner, format_turbo_signal
+from ultimate_scanner import UltimateScanner, format_ultimate_signal
 from spread_tracker import SpreadTracker, format_closure_message
 from bot import TelegramBot
 
@@ -61,7 +61,7 @@ class MMRdexBot:
     def __init__(self):
         self.mexc = MEXCClient()
         self.dexscreener = DexScreenerClient()
-        self.scanner = TurboScanner(self.mexc, self.dexscreener)
+        self.scanner = UltimateScanner(self.mexc, self.dexscreener)
         self.tracker = SpreadTracker(self.mexc, self.dexscreener)
         self.telegram = TelegramBot()
         self.ws = get_ws_client()
@@ -168,7 +168,7 @@ class MMRdexBot:
                     
                     # Get token statistics
                     token_stats = await get_token_stats(signal.token)
-                    message = format_turbo_signal(signal, token_stats)
+                    message = format_ultimate_signal(signal, token_stats)
                     
                     # Generate chart
                     chart_image = None

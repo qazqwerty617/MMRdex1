@@ -15,10 +15,10 @@ TELEGRAM_TOPIC_ID = int(os.getenv("TELEGRAM_TOPIC_ID", "11")) or None
 # ============================================================
 # ARBITRAGE SETTINGS - HIGH SPREAD ONLY
 # ============================================================
-MIN_SPREAD_PERCENT = 10.0   # Minimum 10% spread for quality signals
+MIN_SPREAD_PERCENT = 10.0   # Minimum 2% spread for more signals
 MAX_SPREAD_PERCENT = 1000.0 # Effectively unlimited (was 50.0)
-MIN_LIQUIDITY_USD = 10_000      # Low but safe: $10k
-MIN_VOLUME_24H_USD = 5_000      # Ensure activity: $5k
+MIN_LIQUIDITY_USD = 50_000      # $50k liquidity
+MIN_VOLUME_24H_USD = 30_000     # $30k volume
 MIN_FDV_USD = 50_000            # No micro-caps: $50k
 MIN_TXNS_24H = 10               # Minimum activity: 10 trades
 
@@ -65,7 +65,8 @@ MAJOR_TOKENS = {
     "BTC", "ETH", "SOL", "BNB", "XRP", "ADA", "DOGE", "DOT", "MATIC", "SHIB",
     "AVAX", "LINK", "UNI", "ATOM", "LTC", "ETC", "XLM", "ALGO", "VET", "FIL",
     "NEAR", "APT", "OP", "ARB", "INJ", "SUI", "SEI", "TIA", "JUP", "WIF",
-    "BONK", "PEPE", "FLOKI", "MEME", "ORDI", "STX", "IMX", "RUNE", "FTM"
+    "BONK", "PEPE", "FLOKI", "MEME", "ORDI", "STX", "IMX", "RUNE", "FTM",
+    "DASH", "FTT", "YFI", "MKR", "AAVE", "COMP", "SNX", "BCH", "ETC", "LTC"
 }
 
 MAJOR_TOKEN_MAX_SPREAD = 50.0
