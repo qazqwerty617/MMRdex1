@@ -291,10 +291,10 @@ class UltimateScanner:
                 logger.debug(f"Skip {symbol}: Major token price ratio {price_ratio:.2f} (fake)")
                 return None
         else:
-            # Altcoins: Tightened to 0.7x-1.4x (max 30-40% realistic)
-            # Previously 0.6-1.5 was too loose
-            if price_ratio < 0.7 or price_ratio > 1.4:
-                logger.debug(f"Skip {symbol}: Price ratio {price_ratio:.2f} outside realistic range (fake)")
+            # Altcoins: TIGHTENED to 0.8x-1.25x (max 20-25% spread)
+            # Anything > 25% spread is almost certainly a fake/scam token or wrong network.
+            if price_ratio < 0.8 or price_ratio > 1.25:
+                logger.debug(f"Skip {symbol}: Price ratio {price_ratio:.2f} too wide (fake/network mismatch)")
                 return None
         
         # Check cooldown
