@@ -93,7 +93,7 @@ class MMRdexBot:
             logger.warning(f"⚠️ Token intelligence unavailable: {e}")
         
         # Log intelligence summary
-        recommended = self.token_intelligence.get_recommended_tokens(min_score=5.0, limit=10)
+        recommended = self.token_intelligence.get_recommended_tokens(min_score=5.0, limit=10)  # Get top 10 tokens
         avoid = self.token_intelligence.get_avoid_tokens()
         if recommended:
             logger.info(f"🏆 Top tokens: {', '.join([t[0] for t in recommended[:5]])}")
@@ -189,7 +189,7 @@ class MMRdexBot:
                 
                 # Periodic stats with intelligence info
                 if scan_count % 100 == 0:
-                    top_tokens = self.token_intelligence.get_recommended_tokens(n=3)
+                    top_tokens = self.token_intelligence.get_recommended_tokens(limit=3)
                     top_str = ", ".join([f"{t[0]}({t[1]:.1f})" for t in top_tokens])
                     logger.info(
                         f"📊 Stats: {scan_count} scans, {signal_count} signals | "

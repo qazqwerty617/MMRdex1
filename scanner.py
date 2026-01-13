@@ -181,7 +181,7 @@ class ArbitrageScanner:
         
         # For altcoins, require higher volume
         if not self.validator.is_major_token(symbol):
-            if volume_24h < 100_000:  # $100k minimum for altcoins
+            if volume_24h < MIN_VOLUME_24H_USD:  # Use config value
                 return None
         
         # FDV check

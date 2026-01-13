@@ -17,10 +17,10 @@ TELEGRAM_TOPIC_ID = int(os.getenv("TELEGRAM_TOPIC_ID", "11")) or None
 # ============================================================
 MIN_SPREAD_PERCENT = 10.0   # Minimum 10% spread for quality signals
 MAX_SPREAD_PERCENT = 50.0  
-MIN_LIQUIDITY_USD = 500       # ULTRA LOW: $500
-MIN_VOLUME_24H_USD = 500      # ULTRA LOW: $500
-MIN_FDV_USD = 10_000          # ULTRA LOW: $10k
-MIN_TXNS_24H = 5              # ULTRA LOW: 5 trades
+MIN_LIQUIDITY_USD = 10_000      # Low but safe: $10k
+MIN_VOLUME_24H_USD = 5_000      # Ensure activity: $5k
+MIN_FDV_USD = 50_000            # No micro-caps: $50k
+MIN_TXNS_24H = 10               # Minimum activity: 10 trades
 
 # ============================================================
 # TRADING FEES (Futures Only Strategy)
@@ -68,11 +68,11 @@ MAJOR_TOKENS = {
     "BONK", "PEPE", "FLOKI", "MEME", "ORDI", "STX", "IMX", "RUNE", "FTM"
 }
 
-MAJOR_TOKEN_MAX_SPREAD = 3.0
-MAJOR_TOKEN_PRICE_RATIO_MIN = 0.97
-MAJOR_TOKEN_PRICE_RATIO_MAX = 1.03
-ALTCOIN_PRICE_RATIO_MIN = 0.7
-ALTCOIN_PRICE_RATIO_MAX = 1.3
+MAJOR_TOKEN_MAX_SPREAD = 50.0
+MAJOR_TOKEN_PRICE_RATIO_MIN = 0.50
+MAJOR_TOKEN_PRICE_RATIO_MAX = 2.00
+ALTCOIN_PRICE_RATIO_MIN = 0.50
+ALTCOIN_PRICE_RATIO_MAX = 2.00
 
 # ============================================================
 # TOKEN BLACKLIST

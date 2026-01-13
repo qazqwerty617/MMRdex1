@@ -98,6 +98,8 @@ class TurboScanner:
         # Quality thresholds - RELAXED for signal generation
         self.min_quality_score = 0.5  # ULTRA LOW to allow signals
         self.min_entry_quality = 0.5  # ULTRA LOW to allow signals
+        
+        self._scan_counter = 0  # To throttle logs
     
     async def initialize_intelligence(self):
         """Load intelligence data from database and APIs"""
@@ -178,11 +180,13 @@ class TurboScanner:
         # PARALLEL processing - scan all chains at once
         tasks = []
         for chain, addresses in batches.items():
-            for i in range(0, len(addresses), DEXSCREENER_BATCH_SIZE):
                 chunk = addresses[i:i + DEXSCREENER_BATCH_SIZE]
                 tasks.append(self._scan_batch(chain, chunk, mexc_prices))
         
-        logger.info(f"🔎 Scanning {len(tasks)} batches...")
+        # Log occasionally (every 60 scans typical ~1 min)
+        self._scan_counter += 1
+        if self._scan_counter % 60 == 0:
+            logger.info(f"🔎 Scanning {len(tasks)} batches... (throttled log)")
 
         
         # Execute all batches in parallel
@@ -324,6 +328,8 @@ class TurboScanner:
             spread_percent=abs_spread
         )
         if not is_valid:
+            if abs_spread > 5.0:
+                logger.debug(f"🚫 [FILTER] {symbol}: {reason} (Spread: {abs_spread:.1f}%)")
             return None
         
         # Liquidity & Volume filters
@@ -331,10 +337,12 @@ class TurboScanner:
         volume_24h = pair.get("volume_24h", 0)
         
         if liquidity < MIN_LIQUIDITY_USD:
-            logger.debug(f"Skip {symbol}: Low liquidity (${liquidity:.0f} < ${MIN_LIQUIDITY_USD})")
+            if abs_spread > 5.0:
+                logger.debug(f"🚫 [LIQUIDITY] {symbol}: ${liquidity:.0f} < ${MIN_LIQUIDITY_USD} (Spread: {abs_spread:.1f}%)")
             return None
         if volume_24h < MIN_VOLUME_24H_USD:
-            logger.debug(f"Skip {symbol}: Low volume (${volume_24h:.0f} < ${MIN_VOLUME_24H_USD})")
+            if abs_spread > 5.0:
+                logger.debug(f"🚫 [VOLUME] {symbol}: ${volume_24h:.0f} < ${MIN_VOLUME_24H_USD} (Spread: {abs_spread:.1f}%)")
             return None
         
         # Volume ratio filter
@@ -351,7 +359,8 @@ class TurboScanner:
         net_profit = gross_profit - funding_cost
         
         if net_profit < -5.0:  # Allow negative net profit down to -5%
-            logger.debug(f"Skip {symbol}: Net profit too low ({net_profit:.1f}%)")
+            if abs_spread > 5.0:
+                logger.debug(f"🚫 [PROFIT] {symbol}: Net profit {net_profit:.1f}% too low (Spread: {abs_spread:.1f}%)")
             return None
         
         # FDV check
@@ -389,7 +398,8 @@ class TurboScanner:
             if ob:
                 order_book_depth = ob.get("depth_usd", 0)
                 if order_book_depth < 1_000:  # Reduced from $10k to $1k
-                    logger.debug(f"Skip {symbol}: Order book shallow (${order_book_depth:.0f})")
+                    if abs_spread > 5.0:
+                        logger.debug(f"🚫 [DEPTH] {symbol}: Order book shallow (${order_book_depth:.0f}) (Spread: {abs_spread:.1f}%)")
                     return None
         except asyncio.TimeoutError:
             pass

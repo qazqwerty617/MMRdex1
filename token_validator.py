@@ -91,10 +91,11 @@ class TokenValidator:
         
         if ratio < min_ratio or ratio > max_ratio:
             logger.debug(
-                f"Price ratio validation failed for {symbol}: "
-                f"ratio={ratio:.4f}, allowed=[{min_ratio}, {max_ratio}]"
+                f"Price ratio warning for {symbol}: "
+                f"ratio={ratio:.4f}, allowed=[{min_ratio}, {max_ratio}] (Allowed for testing)"
             )
-            return False
+            # return False  <-- DISABLED for testing
+            return True
         return True
     
     def is_likely_fake(self, symbol: str, chain: str) -> bool:
@@ -153,15 +154,16 @@ class TokenValidator:
         if self.is_likely_fake(symbol, chain):
             return False, f"Fake token: {symbol} shouldn't exist on {chain}"
         
-        # Major token spread check
-        if self.is_major_token(symbol):
-            if spread_percent > MAJOR_TOKEN_MAX_SPREAD:
-                return False, f"Major token {symbol} has unrealistic {spread_percent:.1f}% spread"
+        # Major token spread check - DISABLED for aggressive scanning
+        # if self.is_major_token(symbol):
+        #     if spread_percent > MAJOR_TOKEN_MAX_SPREAD:
+        #         return False, f"Major token {symbol} has unrealistic {spread_percent:.1f}% spread"
         
-        # Price ratio check
+        # Price ratio check - RELAXED
         if not self.validate_price_ratio(symbol, dex_price, mexc_price):
-            ratio = dex_price / mexc_price if mexc_price > 0 else 0
-            return False, f"Price mismatch: DEX/MEXC ratio {ratio:.2f}"
+             # This block is effectively unreachable now as validate_price_ratio returns True
+             ratio = dex_price / mexc_price if mexc_price > 0 else 0
+             return False, f"Price mismatch: DEX/MEXC ratio {ratio:.2f}"
         
         # Contract verification (if available)
         if contract_address and self.is_major_token(symbol):

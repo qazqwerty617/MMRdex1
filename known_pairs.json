@@ -3750,5 +3750,152 @@
     "dex": "pumpswap",
     "verified": true,
     "updated": 1767993006
+  },
+  "HOOK": {
+    "chain": "bsc",
+    "address": "0x9e9b768174eF24233BF8AC2f4131F10ff5E72Dee",
+    "dex": "pancakeswap",
+    "verified": true,
+    "updated": 1768213824
+  },
+  "MANTA": {
+    "chain": "ethereum",
+    "address": "0xeC64a72F36445621e040a99bC15a7500fB36ef8a",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1768213827
+  },
+  "IOTX": {
+    "chain": "bsc",
+    "address": "0xc13aA76AAc067c86aE38028019F414D731b3D86A",
+    "dex": "pancakeswap",
+    "verified": true,
+    "updated": 1768213829
+  },
+  "DYDX": {
+    "chain": "osmosis",
+    "address": "3152-factory_osmo1zem8r6dv6u38f6qpg546zy30946av8h5srgug0s4gcyy6cfecf3seac083_alloyed_allDYDX-ibc_498A0751C798A0D9A389AA3691123DADA57DAA4FE165D5C75894505B876BA6E4",
+    "dex": "osmosis",
+    "verified": true,
+    "updated": 1768213831
+  },
+  "114514": {
+    "chain": "solana",
+    "address": "AA2x8NAEEen6zQ7wxxL6horSkHmJMPnsiYjLroQZMkCe",
+    "dex": "pumpswap",
+    "verified": true,
+    "updated": 1768213832
+  },
+  "OOOO": {
+    "chain": "bsc",
+    "address": "0x66Af1b89b5706dEe7823B2EcE8d736D5c66541a9",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1768213835
+  },
+  "ACH": {
+    "chain": "ethereum",
+    "address": "0xeB4626c5149894022C2066120ea7F20f217995Fb",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1768213838
+  },
+  "COLLECT": {
+    "chain": "bsc",
+    "address": "0x60F7b1b6F666b87722FF53005B95E4DDA10448A9",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1768213839
+  },
+  "GUA": {
+    "chain": "bsc",
+    "address": "0xaeEd9A1A9859Bc30dc76dC367825fdE54274FeD6",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1768213898
+  },
+  "BB": {
+    "chain": "ethereum",
+    "address": "0x9172a1AbB81021Ef1FE0Ea6D60D25e8a9F77e190",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1768213908
+  },
+  "PUNDIX": {
+    "chain": "bsc",
+    "address": "0x268A0e9B5073340255bDd1B2586A5d48D77AF3ea",
+    "dex": "pancakeswap",
+    "verified": true,
+    "updated": 1768213910
+  },
+  "BICO": {
+    "chain": "ethereum",
+    "address": "0xc471241f99cd52f9065628f88ae397c4b853d9a9a571e3e3faff290f355c9863",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1768213920
+  },
+  "BREV": {
+    "chain": "bsc",
+    "address": "0xF50F1Dc280cc0070411BE679F26E03C02C8Fe2E6",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1768213985
+  },
+  "DN": {
+    "chain": "bsc",
+    "address": "0x16939718526B73EEf5DeAbF5deB7F704AD3E03AE",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1768213988
+  },
+  "TTD": {
+    "chain": "bsc",
+    "address": "0x6431c37B0fc3c8f4ac282154532226b1074332bC",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1768213988
+  },
+  "EPH": {
+    "chain": "bsc",
+    "address": "0x1Bb54751B09a220211C0b04FD5229C6a88EC2A64",
+    "dex": "pancakeswap",
+    "verified": true,
+    "updated": 1768213990
+  },
+  "ZTC": {
+    "chain": "bsc",
+    "address": "0x227654561514CFa438B1e8BB4acd9437925fF127",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1768214128
+  },
+  "ZIL": {
+    "chain": "bsc",
+    "address": "0x6A97867a4b7Eb7646ffB1F359ad582e9903aa1C2",
+    "dex": "pancakeswap",
+    "verified": true,
+    "updated": 1768214195
+  },
+  "BIT": {
+    "chain": "solana",
+    "address": "D3ekERHvQe4aNgv9oCmReyBfeGs1beBwu3Nyj762z1Np",
+    "dex": "meteora",
+    "verified": true,
+    "updated": 1768214200
+  },
+  "BEL": {
+    "chain": "ethereum",
+    "address": "0x9E98dEaC1A416C9CE3C892BD8EeF586f1291CA35",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1768214347
+  },
+  "ESIM": {
+    "chain": "bsc",
+    "address": "0xbf4DC3116Ba2490ba860849b2cD3399932e843bC",
+    "dex": "uniswap",
+    "verified": true,
+    "updated": 1768214363
   }
 }
