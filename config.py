@@ -16,7 +16,7 @@ TELEGRAM_TOPIC_ID = int(os.getenv("TELEGRAM_TOPIC_ID", "11")) or None
 # ARBITRAGE SETTINGS - HIGH SPREAD ONLY
 # ============================================================
 MIN_SPREAD_PERCENT = 10.0   # Minimum 10% spread for quality signals
-MAX_SPREAD_PERCENT = 50.0  
+MAX_SPREAD_PERCENT = 1000.0 # Effectively unlimited (was 50.0)
 MIN_LIQUIDITY_USD = 10_000      # Low but safe: $10k
 MIN_VOLUME_24H_USD = 5_000      # Ensure activity: $5k
 MIN_FDV_USD = 50_000            # No micro-caps: $50k

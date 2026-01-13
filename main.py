@@ -40,11 +40,18 @@ from convergence_analyzer import get_convergence_analyzer
 from token_intelligence import get_token_intelligence
 
 # Configure logging
+# Configure logging
 logging.basicConfig(
     level=getattr(logging, LOG_LEVEL),
     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
     datefmt="%H:%M:%S"
 )
+# Silence noisy libraries
+logging.getLogger("aiosqlite").setLevel(logging.WARNING)
+logging.getLogger("asyncio").setLevel(logging.WARNING)
+logging.getLogger("aiohttp").setLevel(logging.WARNING)
+logging.getLogger("urllib3").setLevel(logging.WARNING)
+
 logger = logging.getLogger(__name__)
 
 
