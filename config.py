@@ -10,7 +10,7 @@ load_dotenv()
 # Telegram
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TELEGRAM_USER_ID = int(os.getenv("TELEGRAM_USER_ID", "-1003582014728"))
-TELEGRAM_TOPIC_ID = int(os.getenv("TELEGRAM_TOPIC_ID", "12")) or None
+TELEGRAM_TOPIC_ID = int(os.getenv("TELEGRAM_TOPIC_ID", "11")) or None
 
 # ============================================================
 # ARBITRAGE SETTINGS - HIGH SPREAD ONLY
