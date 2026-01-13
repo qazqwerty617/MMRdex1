@@ -272,19 +272,28 @@ class UltimateScanner:
         if abs_spread > MAX_SPREAD_PERCENT:
             return None
         
-        # PRICE RATIO FILTER - the KEY to avoiding fake tokens
+        # PRICE RATIO FILTER
         # Real arbitrage: prices differ but are in same ballpark
-        # Fake tokens: completely different price (e.g. $0.05 vs $5.00)
         price_ratio = dex_price / mexc_price if mexc_price > 0 else 0
-        
+        liquidity = pair.get("liquidity_usd", 0)
+
+        # 1. IMPOSSIBLE ARBITRAGE CHECK (Anti-Honeypot)
+        # If liquidity is high (>$200k), huge spreads (>15%) are impossible.
+        # This catches "fake" high-liq tokens that are actually honeypots.
+        if liquidity > 200_000 and abs_spread > 15.0:
+            logger.debug(f"Skip {symbol}: High liquidity (${liquidity:,.0f}) with high spread ({abs_spread:.1f}%) = Suspicious/Honeypot")
+            return None
+
+        # 2. Ratio Checks
         if symbol in MAJOR_TOKENS:
-            # Major tokens: DEX price must be 0.8x-1.25x of MEXC (max 20% spread)
-            if price_ratio < 0.8 or price_ratio > 1.25:
+            # Major tokens: DEX price must be 0.85x-1.15x (max 15% deviation)
+            if price_ratio < 0.85 or price_ratio > 1.15:
                 logger.debug(f"Skip {symbol}: Major token price ratio {price_ratio:.2f} (fake)")
                 return None
         else:
-            # Altcoins: DEX price must be 0.6x-1.5x of MEXC (max 50% spread realistic)
-            if price_ratio < 0.6 or price_ratio > 1.5:
+            # Altcoins: Tightened to 0.7x-1.4x (max 30-40% realistic)
+            # Previously 0.6-1.5 was too loose
+            if price_ratio < 0.7 or price_ratio > 1.4:
                 logger.debug(f"Skip {symbol}: Price ratio {price_ratio:.2f} outside realistic range (fake)")
                 return None
         
