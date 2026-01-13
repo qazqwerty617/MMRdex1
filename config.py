@@ -13,9 +13,9 @@ TELEGRAM_USER_ID = int(os.getenv("TELEGRAM_USER_ID", "-1003582014728"))
 TELEGRAM_TOPIC_ID = int(os.getenv("TELEGRAM_TOPIC_ID", "12")) or None
 
 # ============================================================
-# ARBITRAGE SETTINGS - ULTRA PERMISSIVE MODE
+# ARBITRAGE SETTINGS - HIGH SPREAD ONLY
 # ============================================================
-MIN_SPREAD_PERCENT = 0.3   # ULTRA LOW: 0.3% to force more signals
+MIN_SPREAD_PERCENT = 10.0   # Minimum 10% spread for quality signals
 MAX_SPREAD_PERCENT = 50.0  
 MIN_LIQUIDITY_USD = 500       # ULTRA LOW: $500
 MIN_VOLUME_24H_USD = 500      # ULTRA LOW: $500
