@@ -89,15 +89,15 @@ class TurboScanner:
         
         # Signal cooldowns (prevent spam)
         self._signal_cooldowns: Dict[str, float] = {}
-        self._cooldown_sec = 300  # 5 min cooldown per token+direction
+        self._cooldown_sec = 120  # 2 min cooldown (reduced from 5 min)
         
         self._discovery_task = None
         self._ws_started = False
         self._funding_loaded = False
         
-        # Quality thresholds
-        self.min_quality_score = 4.0  # Minimum token intelligence score
-        self.min_entry_quality = 3.0  # Minimum entry timing quality
+        # Quality thresholds - RELAXED for signal generation
+        self.min_quality_score = 0.5  # ULTRA LOW to allow signals
+        self.min_entry_quality = 0.5  # ULTRA LOW to allow signals
     
     async def initialize_intelligence(self):
         """Load intelligence data from database and APIs"""
@@ -182,6 +182,9 @@ class TurboScanner:
                 chunk = addresses[i:i + DEXSCREENER_BATCH_SIZE]
                 tasks.append(self._scan_batch(chain, chunk, mexc_prices))
         
+        logger.info(f"🔎 Scanning {len(tasks)} batches...")
+
+        
         # Execute all batches in parallel
         if tasks:
             results = await asyncio.gather(*tasks, return_exceptions=True)
@@ -247,52 +250,61 @@ class TurboScanner:
         
         # Quick spread filter
         if abs_spread < MIN_SPREAD_PERCENT or abs_spread > MAX_SPREAD_PERCENT:
+            logger.debug(f"Skip {symbol}: Spread {abs_spread:.1f}% outside range [{MIN_SPREAD_PERCENT}-{MAX_SPREAD_PERCENT}]")
             return None
+
         
         # Cooldown check (prevent spam)
         if self._is_on_cooldown(symbol, direction):
+            logger.debug(f"Skip {symbol}: On cooldown")
             return None
         
         # ===== STAGE 2: Track momentum =====
         momentum = self.momentum_tracker.analyze_momentum(symbol, dex_price)
         
         # ===== STAGE 3: Token Intelligence check =====
-        should_signal, intel_reason = self.token_intelligence.should_signal(
-            symbol, direction, 
-            min_score=self.min_quality_score,
-            min_win_rate=0.25 # Relaxed from 0.35
-        )
-        if not should_signal:
-            logger.info(f"🚫 [INTEL] Skip {symbol}: {intel_reason} (Spread: {abs_spread:.1f}%)")
-            return None
+        # DISABLED for testing - allow all tokens
+        # should_signal, intel_reason = self.token_intelligence.should_signal(
+        #     symbol, direction, 
+        #     min_score=self.min_quality_score,
+        #     min_win_rate=0.05  # ULTRA LOW
+        # )
+        # if not should_signal:
+        #     logger.info(f"🚫 [INTEL] Skip {symbol}: {intel_reason} (Spread: {abs_spread:.1f}%)")
+        #     return None
         
         # ===== STAGE 4: Convergence check =====
-        should_signal, conv_reason = self.convergence_analyzer.should_signal(
-            symbol, min_score=self.min_quality_score
-        )
-        if not should_signal:
-            logger.info(f"🚫 [CONVERGENCE] Skip {symbol}: {conv_reason} (Spread: {abs_spread:.1f}%)")
-            return None
+        # DISABLED for testing - allow all tokens
+        # should_signal, conv_reason = self.convergence_analyzer.should_signal(
+        #     symbol, min_score=0.5  # ULTRA LOW
+        # )
+        # if not should_signal:
+        #     logger.info(f"🚫 [CONVERGENCE] Skip {symbol}: {conv_reason} (Spread: {abs_spread:.1f}%)")
+        #     return None
         
         # ===== STAGE 5: Momentum confirmation =====
-        momentum_ok, momentum_reason = self.momentum_tracker.confirms_direction(
-            symbol, direction, min_strength=0.5 # Relaxed from 2.0
-        )
-        if not momentum_ok:
-            logger.info(f"🚫 [MOMENTUM] Skip {symbol}: {momentum_reason} (Spread: {abs_spread:.1f}%)")
-            return None
+        # DISABLED for testing - allow all directions
+        # momentum_ok, momentum_reason = self.momentum_tracker.confirms_direction(
+        #     symbol, direction, min_strength=10.0  # ULTRA HIGH - never block
+        # )
+        # if not momentum_ok:
+        #     logger.info(f"🚫 [MOMENTUM] Skip {symbol}: {momentum_reason} (Spread: {abs_spread:.1f}%)")
+        #     return None
         
         # ===== STAGE 6: Entry validation =====
+        # RELAXED for testing - allow most entries
         entry_ok, entry_reason = self.entry_validator.validate_entry(
-            symbol, direction, abs_spread, max_movement=3.0 # Relaxed from 0.5
+            symbol, direction, abs_spread, max_movement=10.0  # ULTRA RELAXED
         )
-        if not entry_ok:
+        # Only block catastrophic entries
+        if not entry_ok and "disaster" in entry_reason.lower():
             logger.info(f"🚫 [ENTRY] Skip {symbol}: {entry_reason} (Spread: {abs_spread:.1f}%)")
             return None
         
         entry_quality = self.entry_validator.get_entry_quality(symbol, direction, abs_spread)
-        if entry_quality < self.min_entry_quality:
-            return None
+        # Don't filter by entry quality for now
+        # if entry_quality < self.min_entry_quality:
+        #     return None
         
         # Save price history for charts
         now = time.time()
@@ -319,8 +331,10 @@ class TurboScanner:
         volume_24h = pair.get("volume_24h", 0)
         
         if liquidity < MIN_LIQUIDITY_USD:
+            logger.debug(f"Skip {symbol}: Low liquidity (${liquidity:.0f} < ${MIN_LIQUIDITY_USD})")
             return None
         if volume_24h < MIN_VOLUME_24H_USD:
+            logger.debug(f"Skip {symbol}: Low volume (${volume_24h:.0f} < ${MIN_VOLUME_24H_USD})")
             return None
         
         # Volume ratio filter
@@ -336,7 +350,8 @@ class TurboScanner:
         # Adjusted net profit
         net_profit = gross_profit - funding_cost
         
-        if net_profit < 3.0:  # Minimum 3% after ALL costs
+        if net_profit < -5.0:  # Allow negative net profit down to -5%
+            logger.debug(f"Skip {symbol}: Net profit too low ({net_profit:.1f}%)")
             return None
         
         # FDV check
@@ -373,7 +388,8 @@ class TurboScanner:
             )
             if ob:
                 order_book_depth = ob.get("depth_usd", 0)
-                if order_book_depth < 10_000:
+                if order_book_depth < 1_000:  # Reduced from $10k to $1k
+                    logger.debug(f"Skip {symbol}: Order book shallow (${order_book_depth:.0f})")
                     return None
         except asyncio.TimeoutError:
             pass

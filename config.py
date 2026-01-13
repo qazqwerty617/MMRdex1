@@ -9,18 +9,18 @@ load_dotenv()
 
 # Telegram
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
-TELEGRAM_USER_ID = int(os.getenv("TELEGRAM_USER_ID", "-1003240346405"))
-TELEGRAM_TOPIC_ID = int(os.getenv("TELEGRAM_TOPIC_ID", "9")) or None
+TELEGRAM_USER_ID = int(os.getenv("TELEGRAM_USER_ID", "-1003582014728"))
+TELEGRAM_TOPIC_ID = int(os.getenv("TELEGRAM_TOPIC_ID", "12")) or None
 
 # ============================================================
-# ARBITRAGE SETTINGS - ANTI-SCAM ELITE MODE
+# ARBITRAGE SETTINGS - ULTRA PERMISSIVE MODE
 # ============================================================
-MIN_SPREAD_PERCENT = 0.5   # DEBUG: 0.5% to force signals
-MAX_SPREAD_PERCENT = 40.0  
-MIN_LIQUIDITY_USD = 2_000     # DEBUG: $2k
-MIN_VOLUME_24H_USD = 2_000    # DEBUG: $2k
-MIN_FDV_USD = 100_000         # DEBUG: $100k
-MIN_TXNS_24H = 10             # DEBUG: 10 trades
+MIN_SPREAD_PERCENT = 0.3   # ULTRA LOW: 0.3% to force more signals
+MAX_SPREAD_PERCENT = 50.0  
+MIN_LIQUIDITY_USD = 500       # ULTRA LOW: $500
+MIN_VOLUME_24H_USD = 500      # ULTRA LOW: $500
+MIN_FDV_USD = 10_000          # ULTRA LOW: $10k
+MIN_TXNS_24H = 5              # ULTRA LOW: 5 trades
 
 # ============================================================
 # TRADING FEES (Futures Only Strategy)
@@ -34,13 +34,13 @@ TOTAL_FEES_PERCENT = (MEXC_TAKER_FEE * 2 + SLIPPAGE_ESTIMATE) * 100
 # INTELLIGENCE THRESHOLDS - NEW v4.0
 # ============================================================
 # Minimum quality score to send signal (0-10 scale)
-MIN_QUALITY_SCORE = 1.0  # DEBUG
+MIN_QUALITY_SCORE = 0.1  # ULTRA LOW - allow all signals
 
 # Minimum token win rate to signal (0-1 scale)
-MIN_WIN_RATE = 0.10  # DEBUG
+MIN_WIN_RATE = 0.01  # ULTRA LOW - 1%
 
 # Minimum entry timing quality (0-10 scale)
-MIN_ENTRY_QUALITY = 1.0
+MIN_ENTRY_QUALITY = 0.1  # ULTRA LOW - allow all entries
 
 # Max MEXC movement before entry is "too late" (%)
 MAX_ENTRY_MOVEMENT = 3.0
