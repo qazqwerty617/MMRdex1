@@ -212,10 +212,10 @@ def format_fresh_signal(signal: FreshSignal) -> str:
     
     if signal.direction == "LONG":
         header = f"🟢🟢 <b>LONG? #{signal.token}</b> Spread +{signal.spread_percent:.2f}%"
-        desc = "MEXC дешевле чем DEX - ожидается рост"
+        desc = "MEXC cheaper than DEX - expected to rise"
     else:
         header = f"🔴🔴 <b>SHORT? #{signal.token}</b> Spread -{signal.spread_percent:.2f}%"
-        desc = "MEXC дороже чем DEX - ожидается падение"
+        desc = "MEXC more expensive than DEX - expected to fall"
     
     # Format prices
     mexc_str = f"${signal.mexc_price:.6f}" if signal.mexc_price < 0.01 else f"${signal.mexc_price:.4f}"

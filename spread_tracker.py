@@ -35,6 +35,7 @@ class ClosedSignal:
     price_change_percent: float
     outcome: str  # win, draw, lose
     align_seconds: int  # Time until spread closed
+    message_id: Optional[int] = None
 
 
 class SpreadTracker:
@@ -144,7 +145,8 @@ class SpreadTracker:
                         final_spread=current_spread,
                         price_change_percent=price_change,
                         outcome=outcome,
-                        align_seconds=align_seconds
+                        align_seconds=align_seconds,
+                        message_id=signal.get("message_id")
                     )
                     closed.append(closed_signal)
                     
@@ -187,19 +189,7 @@ def format_closure_message(closed: ClosedSignal) -> str:
         pnl_emoji = "🟠"
         outcome_text = "DRAW"
     
-    # Get token stats for context
-    token_intel = get_token_intelligence()
-    stats = token_intel.get_stats(closed.token)
-    
-    if stats and stats.total_signals >= 3:
-        stats_line = f"📊 Token: {stats.win_rate:.0%} Win ({stats.total_signals} trades)\n"
-    else:
-        stats_line = ""
-    
     return (
-        f"{emoji} <b>{outcome_text}</b> #{closed.token} #{closed.chain.upper()}\n"
-        f"⏱️ Aligned in {align_str}\n"
-        f"{pnl_emoji} PnL: {closed.price_change_percent:+.1f}%\n"
-        f"{stats_line}"
-        f"📉 Spread: {closed.initial_spread:.1f}% → {closed.final_spread:.1f}%"
+        f"{emoji} <b>{outcome_text} #{closed.token}</b> {pnl_emoji} {closed.price_change_percent:+.1f}%\n"
+        f"⏱ {align_str}"
     )

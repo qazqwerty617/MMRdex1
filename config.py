@@ -20,7 +20,7 @@ MAX_SPREAD_PERCENT = 1000.0 # Effectively unlimited (was 50.0)
 MIN_LIQUIDITY_USD = 50_000      # $50k liquidity
 MIN_VOLUME_24H_USD = 30_000     # $30k volume
 MIN_FDV_USD = 50_000            # No micro-caps: $50k
-MIN_TXNS_24H = 10               # Minimum activity: 10 trades
+MIN_TXNS_24H = 100              # Minimum activity: 100 trades
 
 # ============================================================
 # TRADING FEES (Futures Only Strategy)
@@ -104,7 +104,7 @@ WIN_THRESHOLD = 3.5   # Win if price moved +0.5% in direction
 LOSE_THRESHOLD = -3.5 # Lose if moved -0.5% against
 
 # Scan Intervals - TURBO SPEED
-SCAN_INTERVAL_SEC = 1  # 1 second scan interval
+SCAN_INTERVAL_SEC = 0.5  # 0.5 second scan interval (MAX SPEED)
 SPREAD_CHECK_INTERVAL_SEC = 5  # NOW FASTER: Check every 5s instead of 20s!
 DEPOSIT_STATUS_INTERVAL_SEC = 0  # Disabled
 
@@ -114,7 +114,7 @@ FUNDING_REFRESH_SEC = 300  # Every 5 minutes
 # ============================================================
 # API LIMITS
 # ============================================================
-DEXSCREENER_BATCH_SIZE = 30
+DEXSCREENER_BATCH_SIZE = 50  # Increased batch size for speed
 DEXSCREENER_RATE_LIMIT = 300
 DEXSCREENER_DELAY_MS = 100
 

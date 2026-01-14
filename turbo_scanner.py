@@ -56,7 +56,9 @@ class ArbitrageSignal:
     funding_cost: float = 0
     momentum_strength: float = 0
     entry_quality: float = 5.0
+    entry_quality: float = 5.0
     convergence_time_est: float = 0  # Estimated time to converge (seconds)
+    id: Optional[int] = None
 
 
 class TurboScanner:
@@ -446,34 +448,6 @@ class TurboScanner:
         # Save to DB and set cooldown
         await self._save_signal(signal, pair)
         self._set_cooldown(symbol, direction)
-        
-        logger.info(
-            f"🚀 SIGNAL: {direction} ${symbol} | "
-            f"Net: +{net_profit:.1f}% | "
-            f"Quality: {quality_score:.1f}/10 | "
-            f"Entry: {entry_quality:.1f}"
-        )
-        
-        return signal
-    
-    async def _save_signal(self, signal: ArbitrageSignal, pair: dict):
-        """Save signal to database"""
-        dep_status = self.mexc.get_cached_deposit_status(signal.token)
-        
-        await save_signal(
-            token=signal.token,
-            chain=signal.chain,
-            direction=signal.direction,
-            spread_percent=signal.spread_percent,
-            dex_price=signal.dex_price,
-            mexc_price=signal.mexc_price,
-            dex_source="DexScreener",
-            liquidity_usd=signal.liquidity_usd,
-            volume_24h_usd=signal.volume_24h,
-            deposit_enabled=dep_status.get("deposit_enabled", False),
-            withdraw_enabled=dep_status.get("withdraw_enabled", False)
-        )
-        
         await save_price_history(
             token=signal.token,
             chain=signal.chain,

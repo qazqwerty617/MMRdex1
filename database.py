@@ -24,6 +24,9 @@ async def get_db():
 async def init_db():
     """Initialize database tables"""
     async with aiosqlite.connect(DATABASE_PATH) as db:
+        # Enable WAL mode for better concurrency
+        await db.execute("PRAGMA journal_mode=WAL;")
+        
         # Signals table - stores all arbitrage signals
         await db.execute("""
             CREATE TABLE IF NOT EXISTS signals (
@@ -41,7 +44,8 @@ async def init_db():
                 withdraw_enabled INTEGER,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 closed_at TIMESTAMP,
-                is_active INTEGER DEFAULT 1
+                is_active INTEGER DEFAULT 1,
+                message_id INTEGER
             )
         """)
         
@@ -134,6 +138,15 @@ async def save_signal(
         ))
         await db.commit()
         return cursor.lastrowid
+
+
+async def update_signal_message_id(signal_id: int, message_id: int):
+    """Update the Telegram message ID for a signal"""
+    async with aiosqlite.connect(DATABASE_PATH) as db:
+        await db.execute("""
+            UPDATE signals SET message_id = ? WHERE id = ?
+        """, (message_id, signal_id))
+        await db.commit()
 
 
 async def get_active_signals() -> list[dict]:

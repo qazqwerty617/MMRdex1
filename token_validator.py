@@ -94,8 +94,8 @@ class TokenValidator:
                 f"Price ratio warning for {symbol}: "
                 f"ratio={ratio:.4f}, allowed=[{min_ratio}, {max_ratio}] (Allowed for testing)"
             )
-            # return False  <-- DISABLED for testing
-            return True
+            return False
+            # return True
         return True
     
     def is_likely_fake(self, symbol: str, chain: str) -> bool:

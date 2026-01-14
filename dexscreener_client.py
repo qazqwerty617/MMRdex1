@@ -64,6 +64,7 @@ class DexScreenerClient:
                         # Get base token info
                         base_token = pair.get("baseToken", {})
                         token_symbol = base_token.get("symbol", "").upper()
+                        token_address = base_token.get("address", "")
                         
                         # Only include if symbol matches
                         if token_symbol != symbol.upper():
@@ -85,13 +86,15 @@ class DexScreenerClient:
                                 "chain": pair.get("chainId", "unknown"),
                                 "dex": pair.get("dexId", "unknown"),
                                 "pair_address": pair.get("pairAddress", ""),
+                                "token_address": token_address,
                                 "price_usd": price_usd,
                                 "liquidity_usd": liquidity_usd,
                                 "volume_24h": volume_24h,
                                 "fdv": fdv,
                                 "market_cap": market_cap,
                                 "price_change_24h": float(pair.get("priceChange", {}).get("h24", 0) or 0),
-                                "url": pair.get("url", "")
+                                "url": pair.get("url", ""),
+                                "txns": pair.get("txns", {})
                             })
                     
                     # Sort by liquidity (highest first)
@@ -142,6 +145,7 @@ class DexScreenerClient:
                         
                         base_token = pair.get("baseToken", {})
                         token_symbol = base_token.get("symbol", "").upper()
+                        token_address = base_token.get("address", "")
                         
                         if price_usd > 0:
                             # Get FDV and market cap
@@ -153,13 +157,15 @@ class DexScreenerClient:
                                 "chain": pair.get("chainId", "unknown"),
                                 "dex": pair.get("dexId", "unknown"),
                                 "pair_address": pair.get("pairAddress", ""),
+                                "token_address": token_address,
                                 "price_usd": price_usd,
                                 "liquidity_usd": liquidity_usd,
                                 "volume_24h": volume_24h,
                                 "fdv": fdv,
                                 "market_cap": market_cap,
                                 "price_change_24h": float(pair.get("priceChange", {}).get("h24", 0) or 0),
-                                "url": pair.get("url", "")
+                                "url": pair.get("url", ""),
+                                "txns": pair.get("txns", {})
                             })
                     return pairs
                 

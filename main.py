@@ -26,7 +26,7 @@ from config import (
 if platform.system() == 'Windows':
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
-from database import init_db, get_token_stats, get_db
+from database import init_db, get_token_stats, get_db, update_signal_message_id
 from mexc_client import MEXCClient
 from mexc_ws import get_ws_client
 from dexscreener_client import DexScreenerClient
@@ -185,7 +185,12 @@ class MMRdexBot:
                     except Exception as e:
                         logger.error(f"Chart error: {e}")
                     
-                    await self.telegram.send_signal(message, chart_image)
+                    message_id = await self.telegram.send_signal(message, chart_image)
+                    
+                    # Save message ID to DB for threading
+                    if message_id and signal.id:
+                        await update_signal_message_id(signal.id, message_id)
+                    
                     logger.info(
                         f"📤 Signal: {signal.direction} {signal.token} | "
                         f"Net: +{signal.net_profit:.1f}% | "
@@ -218,7 +223,7 @@ class MMRdexBot:
                 
                 for closure in closed:
                     message = format_closure_message(closure)
-                    await self.telegram.send_closure(message)
+                    await self.telegram.send_closure(message, reply_to_message_id=closure.message_id)
                     logger.info(
                         f"✅ Closed: {closure.token} | {closure.outcome} | "
                         f"PnL: {closure.price_change_percent:+.1f}%"

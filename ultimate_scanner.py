@@ -17,7 +17,8 @@ from config import (
     MIN_SPREAD_PERCENT, MAX_SPREAD_PERCENT, 
     MIN_LIQUIDITY_USD, MIN_VOLUME_24H_USD,
     TOKEN_BLACKLIST, TOTAL_FEES_PERCENT,
-    MAJOR_TOKENS
+    TOKEN_BLACKLIST, TOTAL_FEES_PERCENT,
+    MAJOR_TOKENS, MIN_TXNS_24H, DEXSCREENER_BATCH_SIZE
 )
 from mexc_client import MEXCClient
 from mexc_ws import get_ws_client
@@ -25,6 +26,8 @@ from dexscreener_client import DexScreenerClient, get_chain_display_name
 from database import save_signal, check_signal_exists, save_price_history
 from listing_detector import get_listing_detector
 from pump_detector import get_pump_detector
+from pair_manager import PairManager
+from token_validator import get_validator
 
 logger = logging.getLogger(__name__)
 
@@ -55,6 +58,8 @@ class UltimateSignal:
     dex_change: float = 0
     # Is new listing?
     is_new_listing: bool = False
+    # Database ID
+    id: Optional[int] = None
 
 
 class UltimateScanner:
@@ -67,10 +72,15 @@ class UltimateScanner:
         self.mexc = mexc_client
         self.dexscreener = dexscreener_client
         self.ws = get_ws_client()
+        self.pair_manager = PairManager(dexscreener_client)
         
         # Detectors
         self.listing_detector = get_listing_detector()
         self.pump_detector = get_pump_detector()
+        self.validator = get_validator()
+        
+        # Background tasks
+        self._discovery_task = None
         
         # Price tracking for origin detection
         self._mexc_history: Dict[str, List[tuple]] = defaultdict(list)  # {symbol: [(time, price), ...]}
@@ -187,45 +197,61 @@ class UltimateScanner:
         if pump_events:
             logger.info(f"💥 {len(pump_events)} pump/dump events detected!")
         
-        # Step 3: Priority tokens (new listings + recent pumps + random sample)
-        priority_tokens = set()
+        # Step 3: Start background discovery
+        if self._discovery_task is None or self._discovery_task.done():
+            self._discovery_task = asyncio.create_task(
+                self.pair_manager.discover_pairs(mexc_prices)
+            )
         
-        # Add new listings (HIGHEST PRIORITY)
+        # Step 4: Scan Priority Tokens (New Listings + Pumps)
+        # These are scanned individually to ensure we get the absolute latest data
+        priority_tokens = set()
         for listing in new_listings:
             priority_tokens.add(listing.symbol)
-        
-        # Add recent pump/dump tokens
         for event in self.pump_detector.get_recent_events(max_age_sec=120):
             priority_tokens.add(event.symbol)
-        
-        # Add sample of other tokens (rotate through all)
-        all_tokens = [t for t in mexc_prices.keys() if t not in TOKEN_BLACKLIST]
-        sample_start = (self._scan_count * 50) % len(all_tokens)
-        sample_end = min(sample_start + 50, len(all_tokens))
-        for token in all_tokens[sample_start:sample_end]:
-            priority_tokens.add(token)
-        
-        # Step 4: Check spreads for priority tokens
-        for symbol in priority_tokens:
-            if symbol not in mexc_prices:
-                continue
             
-            try:
-                signal = await self._check_spread(
-                    symbol, 
-                    mexc_prices[symbol],
-                    is_new_listing=(symbol in [l.symbol for l in new_listings])
-                )
-                if signal:
-                    signals.append(signal)
-            except Exception as e:
-                logger.debug(f"Error checking {symbol}: {e}")
+        for symbol in priority_tokens:
+            if symbol in mexc_prices:
+                try:
+                    signal = await self._check_spread(
+                        symbol, 
+                        mexc_prices[symbol],
+                        is_new_listing=(symbol in [l.symbol for l in new_listings])
+                    )
+                    if signal:
+                        signals.append(signal)
+                except Exception as e:
+                    logger.debug(f"Error checking priority {symbol}: {e}")
+
+        # Step 5: Batch Scan (The "Optimization")
+        # Scan known pairs in batches to maximize throughput
+        batches = self.pair_manager.get_batch_candidates()
+        tasks = []
+        
+        for chain, addresses in batches.items():
+            # Process in chunks
+            for i in range(0, len(addresses), DEXSCREENER_BATCH_SIZE):
+                chunk = addresses[i:i + DEXSCREENER_BATCH_SIZE]
+                tasks.append(self._scan_batch(chain, chunk, mexc_prices))
+        
+        # Execute batch scans
+        if tasks:
+            # Limit concurrency to avoid overwhelming CPU/Network
+            # Split tasks into chunks of 10 concurrent requests
+            chunk_size = 10
+            for i in range(0, len(tasks), chunk_size):
+                batch_tasks = tasks[i:i + chunk_size]
+                results = await asyncio.gather(*batch_tasks, return_exceptions=True)
+                for result in results:
+                    if isinstance(result, list):
+                        signals.extend(result)
         
         # Log periodically
         if self._scan_count % 30 == 0:
             logger.info(
                 f"📊 Scan #{self._scan_count}: "
-                f"checked {len(priority_tokens)} tokens, "
+                f"checked {len(priority_tokens)} priority + {len(tasks)} batches, "
                 f"found {len(signals)} signals"
             )
         
@@ -234,6 +260,47 @@ class UltimateScanner:
             logger.info(f"⚡ Scan completed in {scan_time:.0f}ms - Found {len(signals)} signals")
         
         return signals
+
+    async def _scan_batch(
+        self, 
+        chain: str, 
+        addresses: List[str],
+        mexc_prices: Dict[str, float]
+    ) -> List[UltimateSignal]:
+        """Scan a batch of addresses"""
+        signals = []
+        try:
+            pairs = await self.dexscreener.get_pairs_by_addresses(chain, addresses)
+            for pair in pairs:
+                # We need to reconstruct the symbol check since we're coming from address
+                symbol = pair.get("symbol")
+                if not symbol or symbol not in mexc_prices:
+                    continue
+                    
+                # Reuse _check_spread logic but with pre-fetched pair
+                # We need to refactor _check_spread to accept an optional pair
+                # Or just duplicate the logic here for speed (preferred for batching)
+                mexc_price = mexc_prices[symbol]
+                
+                # Fast check spread
+                dex_price = pair.get("price_usd", 0)
+                if dex_price <= 0 or mexc_price <= 0:
+                    continue
+                    
+                spread = ((dex_price - mexc_price) / mexc_price) * 100
+                abs_spread = abs(spread)
+                
+                if abs_spread < MIN_SPREAD_PERCENT or abs_spread > MAX_SPREAD_PERCENT:
+                    continue
+                
+                # If spread looks good, do full validation
+                signal = await self._validate_and_create_signal(symbol, pair, mexc_price)
+                if signal:
+                    signals.append(signal)
+                    
+        except Exception as e:
+            logger.debug(f"Batch scan error {chain}: {e}")
+        return signals
     
     async def _check_spread(
         self, 
@@ -241,14 +308,46 @@ class UltimateScanner:
         mexc_price: float,
         is_new_listing: bool = False
     ) -> Optional[UltimateSignal]:
-        """Check single token for spread opportunity"""
+        """Check single token for spread opportunity (fetches pair)"""
         
-        # Get DEX price
+        # Get DEX data with reference price
         pair = await self.dexscreener.get_best_dex_price(
             symbol,
             min_liquidity=MIN_LIQUIDITY_USD,
-            min_volume=0  # Don't filter by volume - new tokens may have low volume
+            min_volume=MIN_VOLUME_24H_USD,
+            reference_price=mexc_price
         )
+        
+        if not pair:
+            return None
+            
+        return await self._validate_and_create_signal(
+            symbol, pair, mexc_price, is_new_listing
+        )
+
+    async def _validate_and_create_signal(
+        self, 
+        symbol: str, 
+        pair: dict,
+        mexc_price: float,
+        is_new_listing: bool = False
+    ) -> Optional[UltimateSignal]:
+        """Validate pair and create signal (shared logic)"""
+        
+        # Check Volume/Liquidity Ratio (Dead/Fake token check)
+        # Real tokens usually have Volume > 10% of Liquidity.
+        # Honeypots often have high liquidity but 0 volume.
+        liq = pair.get("liquidity_usd", 0)
+        vol = pair.get("volume_24h", 0)
+        if liq > 0 and (vol / liq) < 0.02: # volume must be at least 2% of liquidity
+             return None
+        
+        # Check transaction count (Activity Filter)
+        txns = pair.get("txns", {}).get("h24", {})
+        total_txns = txns.get("buys", 0) + txns.get("sells", 0)
+        if total_txns < MIN_TXNS_24H:
+            # logger.debug(f"Skip {symbol}: Low activity ({total_txns} txns < {MIN_TXNS_24H})")
+            return None
         
         if not pair:
             return None
@@ -272,30 +371,19 @@ class UltimateScanner:
         if abs_spread > MAX_SPREAD_PERCENT:
             return None
         
-        # PRICE RATIO FILTER
-        # Real arbitrage: prices differ but are in same ballpark
-        price_ratio = dex_price / mexc_price if mexc_price > 0 else 0
-        liquidity = pair.get("liquidity_usd", 0)
-
-        # 1. IMPOSSIBLE ARBITRAGE CHECK (Anti-Honeypot)
-        # If liquidity is high (>$200k), huge spreads (>15%) are impossible.
-        # This catches "fake" high-liq tokens that are actually honeypots.
-        if liquidity > 200_000 and abs_spread > 15.0:
-            logger.debug(f"Skip {symbol}: High liquidity (${liquidity:,.0f}) with high spread ({abs_spread:.1f}%) = Suspicious/Honeypot")
+        # VALIDATE TOKEN (Anti-Scam/Fake Check)
+        is_valid, reason = self.validator.validate_token(
+            symbol, 
+            chain, 
+            dex_price, 
+            mexc_price, 
+            abs_spread,
+            pair.get("token_address")
+        )
+        
+        if not is_valid:
+            logger.debug(f"Skip {symbol}: {reason}")
             return None
-
-        # 2. Ratio Checks
-        if symbol in MAJOR_TOKENS:
-            # Major tokens: DEX price must be 0.85x-1.15x (max 15% deviation)
-            if price_ratio < 0.85 or price_ratio > 1.15:
-                logger.debug(f"Skip {symbol}: Major token price ratio {price_ratio:.2f} (fake)")
-                return None
-        else:
-            # Altcoins: TIGHTENED to 0.8x-1.25x (max 20-25% spread)
-            # Anything > 25% spread is almost certainly a fake/scam token or wrong network.
-            if price_ratio < 0.8 or price_ratio > 1.25:
-                logger.debug(f"Skip {symbol}: Price ratio {price_ratio:.2f} too wide (fake/network mismatch)")
-                return None
         
         # Check cooldown
         if self._is_on_cooldown(symbol, direction):
@@ -342,7 +430,7 @@ class UltimateScanner:
         )
         
         # Save to database
-        await save_signal(
+        signal_id = await save_signal(
             token=symbol,
             chain=chain,
             direction=direction,
@@ -355,6 +443,8 @@ class UltimateScanner:
             deposit_enabled=True,
             withdraw_enabled=True
         )
+        
+        signal.id = signal_id
         
         # Save price history
         await save_price_history(

@@ -128,13 +128,13 @@ class TelegramBot:
         """Stop the bot"""
         await self.bot.session.close()
     
-    async def send_signal(self, message: str, chart_image: bytes = None):
-        """Send signal notification to user, optionally with chart image"""
+    async def send_signal(self, message: str, chart_image: bytes = None) -> int:
+        """Send signal notification to user, optionally with chart image. Returns message_id."""
         try:
             if chart_image:
                 # Send photo with caption
                 photo = BufferedInputFile(chart_image, filename="chart.png")
-                await self.bot.send_photo(
+                sent_message = await self.bot.send_photo(
                     chat_id=TELEGRAM_USER_ID,
                     photo=photo,
                     caption=message,
@@ -143,24 +143,27 @@ class TelegramBot:
                 )
             else:
                 # Send text only
-                await self.bot.send_message(
+                sent_message = await self.bot.send_message(
                     chat_id=TELEGRAM_USER_ID,
                     text=message,
                     parse_mode=ParseMode.HTML,
                     disable_web_page_preview=True,
                     message_thread_id=TELEGRAM_TOPIC_ID
                 )
+            return sent_message.message_id
         except Exception as e:
             logger.error(f"Failed to send signal: {e}")
+            return None
     
-    async def send_closure(self, message: str):
+    async def send_closure(self, message: str, reply_to_message_id: int = None):
         """Send spread closure notification"""
         try:
             await self.bot.send_message(
                 chat_id=TELEGRAM_USER_ID,
                 text=message,
                 parse_mode=ParseMode.HTML,
-                message_thread_id=TELEGRAM_TOPIC_ID
+                message_thread_id=TELEGRAM_TOPIC_ID,
+                reply_to_message_id=reply_to_message_id
             )
         except Exception as e:
             logger.error(f"Failed to send closure: {e}")

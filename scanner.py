@@ -13,9 +13,8 @@ from dataclasses import dataclass
 from typing import Literal, Optional
 
 from config import (
-    MIN_SPREAD_PERCENT, MAX_SPREAD_PERCENT, MIN_LIQUIDITY_USD, 
-    MIN_VOLUME_24H_USD, MIN_FDV_USD, DEXSCREENER_BATCH_SIZE, 
-    TOKEN_BLACKLIST, TOTAL_FEES_PERCENT
+    MIN_LIQUIDITY_USD, MIN_VOLUME_24H_USD, MIN_FDV_USD, DEXSCREENER_BATCH_SIZE, 
+    TOKEN_BLACKLIST, TOTAL_FEES_PERCENT, MIN_TXNS_24H
 )
 from mexc_client import MEXCClient
 from dexscreener_client import DexScreenerClient, get_chain_display_name
@@ -38,7 +37,9 @@ class ArbitrageSignal:
     chain: str
     liquidity_usd: float
     volume_24h: float
+    volume_24h: float
     order_book_depth: float = 0  # MEXC order book depth
+    id: Optional[int] = None
 
 
 class ArbitrageScanner:
@@ -172,6 +173,12 @@ class ArbitrageScanner:
         if volume_24h < MIN_VOLUME_24H_USD:
             return None
         
+        # Check transaction count (Activity Filter)
+        txns = pair.get("txns", {}).get("h24", {})
+        total_txns = txns.get("buys", 0) + txns.get("sells", 0)
+        if total_txns < MIN_TXNS_24H:
+            return None
+        
         # Volume/Liquidity ratio - filter dead pools
         if liquidity > 0:
             volume_ratio = volume_24h / liquidity
@@ -236,7 +243,7 @@ class ArbitrageScanner:
         dep_status = self.mexc.get_cached_deposit_status(symbol)
         
         # Save to DB
-        await save_signal(
+        signal_id = await save_signal(
             token=symbol,
             chain=pair["chain"],
             direction=direction,
@@ -249,6 +256,8 @@ class ArbitrageScanner:
             deposit_enabled=dep_status.get("deposit_enabled", False),
             withdraw_enabled=dep_status.get("withdraw_enabled", False)
         )
+        
+        signal.id = signal_id
         
         logger.info(
             f"✅ NEW SIGNAL: {direction} {symbol} | "
